@@ -1,0 +1,119 @@
+html, body {
+	margin: 0;
+  padding: 0;
+	font-family: 'Dosis', sans-serif;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+	background-color: rgb(33, 3, 71);
+	height: 60px;
+}
+
+.header .container-fluid .pull-right ul a {
+	text-decoration: none;
+}
+
+.header .container-fluid .pull-right ul a li.images {
+	margin-left: 5px !important;
+}
+
+.header .container-fluid .pull-right ul a li.images, .header .container-fluid .pull-right ul a li.br {
+	margin-top: 10px !important;
+}
+
+.header .container-fluid .pull-right ul a li img {
+	width: 35px;
+}
+
+.header .container-fluid .pull-right ul a li {
+	list-style: none;
+	display: inline-block;
+	color: white;
+	margin-top: 15px;
+	margin-left: 20px;
+	border: 1px solid transparent;
+	transition: 0.7s;
+	font-size: 18px;
+}
+
+.header .container-fluid .pull-right ul a li:hover.images, .header .container-fluid .pull-right ul a li:hover.br {
+	border: 1px solid transparent !important;
+}
+.header .container-fluid .pull-right ul a li:hover {
+	border-bottom: 1px solid white;
+}
+
+.header .container-fluid .pull-left img {
+	width: 95px;
+	margin-left: 15px;
+}
+
+
+/* data */
+
+.data .container .row .col-md-4 h3 {
+	margin-top: 40px;
+}
+
+.data .container .row .col-md-4 img {
+	margin: 20px auto 0 auto;
+}
+
+.data .container .row ul {
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.data .container .row ul a li {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	background-color: white;
+	color: rgb(41,26,76);
+	padding: 3px 8px;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-right: 30px;
+	border: 1px solid transparent;
+}
+
+.data .container .row .col-md-4 .mov {
+	background-color: rgb(41,26,76);
+	border-radius: 5px;
+}
+.data .container .row .col-md-4 .sec {
+	margin-top: 5px;
+}
+
+.data .container .row p {
+	color: white;
+	margin-top: 10px;
+}
+.data .container .row ul a li:hover {
+	color: white;
+	background-color: rgb(41,26,76);
+	transition: 0.5s;
+	border: 1px solid white;
+}
+
+.data .container .row .col-md-4 .sec span {
+	padding: 3px 8px;
+	border-radius: 5px;
+	background-color: white;
+	border: 1px solid white;
+	font-size: 16px;
+	color: rgb(41,26,76);
+	
+}
+
+.data .container .row p strong#green {
+	color: green;
+}
