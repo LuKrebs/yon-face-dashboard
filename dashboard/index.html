@@ -3,8 +3,10 @@
   <head>
     
     <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
   </head>
   <body>
@@ -32,24 +34,20 @@
         <div class="row">
           <div class="col-md-4 text-center">
             <h3>Análise de Movimento</h3> 
-            <img src="img/linechart.png" class="img-responsive">  
+            <img id="mychart" src="img/linechart.png" class="img-responsive">  
             <div class="row mov">
               <div class="col-md-12 text-center">
                 <ul>
-                  <a href=""><li>Dia</li></a>
-                  <a href=""><li>Semana</li></a>
+                  <a href="#" onclick="changeChartTwo()"><li>Dia</li></a>
+                  <a href="#" onclick="changeChart()"><li>Semana</li></a>
                   <a href=""><li>Mês</li></a>
                 </ul>
               </div>
             </div>  
             <div class="row mov sec">
               <div class="col-md-12 text-center">
-                <p>Analise o número de pessoas que entraram em seu estabelecimento por <strong>dia, semana ou mês</strong></p>
-              </div>
-            </div>   
-            <div class="row mov sec">
-              <div class="col-md-12 text-center">
-                <p><span>Dia</span> :  <strong>223 pessoas</strong>. <strong>Ontem: 184</strong>. <strong id="green">+21%</strong>.</p>
+                <p id='date'><strong>Analise o fluxo do seu estabelecimento:</strong><br>
+                <strong>Selecione um período de tempo</strong></p>
               </div>
             </div> 
           </div>
@@ -70,6 +68,21 @@
       </div>
     </div> <!--end: footer-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      function changeChart() {
+        var a = "img/chart2.png";
+        var b = '<span><strong> Essa semana: 1102 pessoas </strong></span>  <strong id="green"> +19%</strong></p><p> <strong>Semana passada: 837 </strong></p>';
+        document.getElementById('mychart').setAttribute("src", a);
+        document.getElementById('date').innerHTML = b;
+      }
+      function changeChartTwo() {
+        var a = "img/chart1.png";
+        var b = '<span><strong>Hoje: 234 pessoas </strong></span>  <strong id="green"> +27%</strong></p><p> <strong>Ontem: 129 </strong></p>';
+        document.getElementById('mychart').setAttribute("src", a);
+        document.getElementById('date').innerHTML = b;
+      }
+    </script>
   </body>
 </html>
 
