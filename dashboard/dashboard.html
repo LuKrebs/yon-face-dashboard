@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="container-fluid">
+        <div class="pull-left">
+          <a href="#"><img src="img/logo.png" class="img-responsive"></a>
+        </div>
+        <div class="pull-right">
+          <ul>
+            <a href="#"><li class="">Tutorial</li></a>
+            <a href="#"><li class="">Metas</li></a>
+            <a href="#"><li class="">Relatórios</li></a>
+            <a href="#"><li class="">Configurações</li></a>
+            <a href="#"><li class="br"><img src="img/br.png"></li></a>
+            <a href="#"><li class="images"><img src="img/uk.png"></li></a>
+          </ul>
+        </div>
+      </div>
+    </div> <!--end: header --> 
+
+    <div class="data">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <h3>Análise de Movimento</h3> 
+            <img id="mychart" src="img/chart0.png" class="img-responsive"> 
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='date'><strong>Analise o fluxo de pessoas no seu estabelecimento:</strong></p>
+              </div>
+            </div>  
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a href="#" onclick="changeChartTwo()" id=""><li>Dia</li></a>
+                  <a href="#" onclick="changeChart()"><li>Semana</li></a>
+                  <a href="#" onclick="changeChartThree()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div>  
+          </div>
+          <div class="col-md-4 text-center">
+            <h3>Análise de Gênero</h3>
+            <img id="mypiechart" src="img/piechart0.png" class="img-responsive"> 
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='datetwo'><strong>Analize o gênero do seu público:</strong></p>
+              </div>
+            </div> 
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a href="#" onclick="changeChartPieOne()" id=""><li>Dia</li></a>
+                  <a href="#" onclick="changeChartPieTwo()"><li>Semana</li></a>
+                  <a href="#" onclick="changeChartPieThree()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <div class="col-md-4 text-center">
+            <h3>Análise de Emoções</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="container">
+      </div>
+    </div> <!--end: footer-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+      function changeChart() {
+        var a = "img/chart2.png";
+        var b = '<p id="estabelecimento" class="text-center"><strong>Fluxo de pessoas: <strong id="green"> +21%</strong></strong></p><span><strong class="text-center"> Semana atual: 1.326  </strong></span></p><p> <strong class="text-center">Semana anterior: 922 </strong></p><p><span id="legend"></span> Semana atual <span id="legendtwo"></span> Semana anterior <div class="dropdown"><i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdown" class="dropdown-content"><a href="#">Apenas a Semana atual</a><a href="#">Apenas a Semana anterior</a><a href="#">Mais opções de gráfico</a></div></div></p> ';
+        document.getElementById('mychart').setAttribute("src", a);
+        document.getElementById('date').innerHTML = b;
+      }
+      function changeChartTwo() {
+        var a = "img/chart1.png";
+        var b = '<p id="estabelecimento" class="text-center"><strong>Fluxo de pessoas: <strong id="green"> +18%</strong></strong></p><span><strong class="text-center"> Hoje: 256  </strong></span></p><p> <strong class="text-center">Ontem: 188 </strong></p><p><span id="legend"></span> Hoje <span id="legendtwo"></span> Ontem <div class="dropdown"><i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdown" class="dropdown-content"><a href="#">Apenas hoje</a><a href="#">Apenas ontem</a><a href="#">Mais opções de gráfico</a></div></div></p> ';
+        document.getElementById('mychart').setAttribute("src", a);
+        document.getElementById('date').innerHTML = b;
+      }
+
+      function changeChartThree() {
+        var a = "img/chart3.png";
+        var b = '<p id="estabelecimento" class="text-center"><strong>Fluxo de pessoas: <strong id="green"> +13%</strong></strong></p><span><strong class="text-center"> Mês atual: 4.328  </strong></span></p><p> <strong class="text-center">Mês anterior: 3.652 </strong></p><p><span id="legend"></span> Mês atual <span id="legendtwo"></span> Mês anterior <div class="dropdown"><i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdown" class="dropdown-content"><a href="#" onclick="chartTreeAtual()">Apenas o mês atual</a><a href="#" onclick="chartTreeAnterior()">Apenas o mês anterior</a><a href="#">Período personalizado</a></div></div></p> ';
+        document.getElementById('mychart').setAttribute("src", a);
+        document.getElementById('date').innerHTML = b;
+      }
+
+      function chartTreeAtual() {
+        var a = "img/chart3atual.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Fluxo de pessoas: </strong></p><span><strong class="text-center"> Mês atual: 4.328  </strong></span></p><p><span id="legend"></span> Mês atual <div class="dropdown"><i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdown" class="dropdown-content"><a href="#" onclick="chartTreeAnterior()">Apenas o mês anterior</a><a href="#" onclick="changeChartThree()">Mês atual e anterior</a><a href="#">Mais opções de gráfico</a></div></div></p> ';
+        document.getElementById('mychart').setAttribute("src", a);
+        document.getElementById('date').innerHTML = b;
+      }
+
+      function chartTreeAnterior() {
+        var a = "img/chart3anterior.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Fluxo de pessoas: </strong></p><span><strong class="text-center"> Mês anterior: 3.652  </strong></span></p><p><span id="legendtwo"></span> Mês anterior <div class="dropdown"><i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdown" class="dropdown-content"><a href="#" onclick="chartTreeAtual()">Apenas o mês atual</a><a href="#" onclick="changeChartThree()">Mês atual e anterior</a><a href="#">Mais opções de gráfico</a></div></div></p> ';
+        document.getElementById('mychart').setAttribute("src", a);
+        document.getElementById('date').innerHTML = b;
+      }
+
+      function changeChartPieOne() {
+        var a = "img/piechart1.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong> </strong></p><span><strong class="text-center"> Mulheres: 145<strong id="woman"> 56%</strong>   </strong></span></p><p> <span><strong class="text-center"> Homens: 111<strong id="man"> 44%</strong>   </strong></span><div class="dropdown"><i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownTwo" class="dropdown-content"><a href="#">Comparar períodos</a></div></div></p> ';
+        document.getElementById('mypiechart').setAttribute("src", a);
+        document.getElementById('datetwo').innerHTML = b;
+      }
+
+      function changeChartPieTwo() {
+        var a = "img/piechart2.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual  </strong></strong> </strong></p><span><strong class="text-center"> Mulheres: 809<strong id="woman"> 61%</strong>   </strong></span></p><p> <span><strong class="text-center"> Homens: 517<strong id="man"> 39%</strong>   </strong></span><div class="dropdown"><i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownTwo" class="dropdown-content"><a href="#">Comparar períodos</a></div></div></p> ';
+        document.getElementById('mypiechart').setAttribute("src", a);
+        document.getElementById('datetwo').innerHTML = b;
+      }
+      
+      function changeChartPieThree() {
+        var a = "img/piechart3.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong></strong> </strong></p><span><strong class="text-center"> Mulheres: 2900<strong id="woman"> 67%</strong>   </strong></span></p><p> <span><strong class="text-center"> Homens: 1428<strong id="man"> 33%</strong>   </strong></span><div class="dropdown"><i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownTwo" class="dropdown-content"><a href="#">Comparar períodos</a></div></div></p> ';
+        document.getElementById('mypiechart').setAttribute("src", a);
+        document.getElementById('datetwo').innerHTML = b;
+      }
+
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      function myFunctionTwo() {
+          document.getElementById("myDropdownTwo").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
+
