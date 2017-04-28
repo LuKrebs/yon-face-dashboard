@@ -33,11 +33,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 text-center">
-            <h3>Análise de Movimento</h3> 
+            <h3>Análise de Fluxo de pessoas</h3> 
             <img id="mychart" src="img/chart0.png" class="img-responsive"> 
             <div class="row mov sec">
               <div class="col-md-12 text-center">
-                <p id='date'><strong>Analise o fluxo de pessoas no seu estabelecimento:</strong></p>
+                <p id='date'><strong>Analise movimento do seu estabelecimento:</strong></p>
               </div>
             </div>  
             <div class="row mov">
@@ -51,7 +51,7 @@
             </div>  
           </div>
           <div class="col-md-4 text-center">
-            <h3>Análise de Gênero</h3>
+            <h3 style="margin-left:-20px; ">Análise de Gênero</h3>
             <img id="mypiechart" src="img/piechart0.png" class="img-responsive"> 
             <div class="row mov sec">
               <div class="col-md-12 text-center">
@@ -61,7 +61,7 @@
             <div class="row mov">
               <div class="col-md-12 text-center">
                 <ul>
-                  <a href="#" onclick="changeChartPieOne()" id=""><li>Dia</li></a>
+                  <a href="#" onclick="changeChartPieOne()"><li>Dia</li></a>
                   <a href="#" onclick="changeChartPieTwo()"><li>Semana</li></a>
                   <a href="#" onclick="changeChartPieThree()"><li>Mês</li></a>
                 </ul>
@@ -70,6 +70,21 @@
           </div>
           <div class="col-md-4 text-center">
             <h3>Análise de Emoções</h3>
+            <img id="mybarchart" src="img/barchart0.png" class="img-responsive"> 
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='datethree'><strong>Analize as emoções predominantes:</strong></p>
+              </div>
+            </div> 
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a href="#" onclick="changeChartBarOne()"><li>Dia</li></a>
+                  <a href="#" onclick="changeChartBarTwo()"><li>Semana</li></a>
+                  <a href="#" onclick="changeChartBarThree()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div> 
           </div>
         </div>
       </div>
@@ -120,23 +135,47 @@
 
       function changeChartPieOne() {
         var a = "img/piechart1.png";
-        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong> </strong></p><span><strong class="text-center"> Mulheres: 145<strong id="woman"> 56%</strong>   </strong></span></p><p> <span><strong class="text-center"> Homens: 111<strong id="man"> 44%</strong>   </strong></span><div class="dropdown"><i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownTwo" class="dropdown-content"><a href="#">Comparar períodos</a></div></div></p> ';
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong> </strong></p><span><strong class="text-center"> Mulheres: 145<strong id="woman"> 56%</strong>   </strong></span></p><p id="test"> <span><strong class="text-center"> Homens: 111<strong id="man"> 44%</strong>   </strong></span><div class="dropdown"><i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownTwo" class="dropdown-content"><a href="#">Comparar períodos</a><a href="#">Comparar gêneros com outros dados</a></div></div></p> ';
         document.getElementById('mypiechart').setAttribute("src", a);
         document.getElementById('datetwo').innerHTML = b;
       }
 
       function changeChartPieTwo() {
         var a = "img/piechart2.png";
-        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual  </strong></strong> </strong></p><span><strong class="text-center"> Mulheres: 809<strong id="woman"> 61%</strong>   </strong></span></p><p> <span><strong class="text-center"> Homens: 517<strong id="man"> 39%</strong>   </strong></span><div class="dropdown"><i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownTwo" class="dropdown-content"><a href="#">Comparar períodos</a></div></div></p> ';
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual  </strong></strong> </strong></p><span><strong class="text-center"> Mulheres: 809<strong id="woman"> 61%</strong>   </strong></span></p><p id="test"> <span><strong class="text-center"> Homens: 517<strong id="man"> 39%</strong>   </strong></span><div class="dropdown"><i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownTwo" class="dropdown-content"><a href="#">Comparar períodos</a><a href="#">Comparar gêneros com outros dados</a></div></div></p> ';
         document.getElementById('mypiechart').setAttribute("src", a);
         document.getElementById('datetwo').innerHTML = b;
       }
       
       function changeChartPieThree() {
         var a = "img/piechart3.png";
-        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong></strong> </strong></p><span><strong class="text-center"> Mulheres: 2900<strong id="woman"> 67%</strong>   </strong></span></p><p> <span><strong class="text-center"> Homens: 1428<strong id="man"> 33%</strong>   </strong></span><div class="dropdown"><i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownTwo" class="dropdown-content"><a href="#">Comparar períodos</a></div></div></p> ';
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong></strong> </strong></p><span><strong class="text-center"> Mulheres: 2.900<strong id="woman"> 67%</strong>   </strong></span></p><p id="test"> <span><strong class="text-center"> Homens: 1.428<strong id="man"> 33%</strong>   </strong></span><div class="dropdown"><i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownTwo" class="dropdown-content"><a href="#">Comparar períodos</a><a href="#">Comparar gêneros com outros dados</a></div></div></p> ';
         document.getElementById('mypiechart').setAttribute("src", a);
         document.getElementById('datetwo').innerHTML = b;
+      }
+
+      function changeChartBarOne() {
+        var a = "img/barchart1.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong> </strong></p><div class="row"><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div><div class="col-md-5 text-center"><p><span id="emotion">65%</span id="emotion"></p><p><span id="emotion">33%</span id="emotion"></p><p><span id="emotion">15%</span id="emotion"></p></div></div></div><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Raiva </p><p>Desgosto</p><p>Tristeza</p></div><div class="col-md-5 text-center"><p><span id="emotion">10%</span id="emotion"></p><p><span id="emotion">18%</span id="emotion"></p><p><span id="emotion">25%</span id="emotion"></p></div></div></div></div><div class="dropdown"><i onclick="myFunctionThree()" class="dropbtn-three fa fa-cog" aria-hidden="true"></i><div id="myDropdownThree" class="dropdown-content-three"><a href="#">Inteligência Artifical para  compreensão das emoções</a><a href="#">Comparar emoções à outros dados</a><a href="#">Período personalizado</a></div></div></p> ';
+
+        document.getElementById('mybarchart').setAttribute("src", a);
+        document.getElementById('datethree').innerHTML = b;
+      }
+
+      function changeChartBarTwo() {
+        var a = "img/barchart2.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual</strong> </strong></p><div class="row"><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div><div class="col-md-5 text-center"><p><span id="emotion">44%</span id="emotion"></p><p><span id="emotion">62%</span id="emotion"></p><p><span id="emotion">4%</span id="emotion"></p></div></div></div><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Raiva </p><p>Desgosto</p><p>Tristeza</p></div><div class="col-md-5 text-center"><p><span id="emotion">15%</span id="emotion"></p><p><span id="emotion">9%</span id="emotion"></p><p><span id="emotion">13%</span id="emotion"></p></div></div></div></div><div class="dropdown"><i onclick="myFunctionThree()" class="dropbtn-three fa fa-cog" aria-hidden="true"></i><div id="myDropdownThree" class="dropdown-content-three"><a href="#">Inteligência Artifical para  compreensão das emoções</a><a href="#">Comparar emoções à outros dados</a><a href="#">Período personalizado</a></div></div></p> ';
+
+        document.getElementById('mybarchart').setAttribute("src", a);
+        document.getElementById('datethree').innerHTML = b;
+      }
+
+      function changeChartBarThree() {
+        var a = "img/barchart3.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong> </strong></p><div class="row"><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div><div class="col-md-5 text-center"><p><span id="emotion">71%</span id="emotion"></p><p><span id="emotion">19%</span id="emotion"></p><p><span id="emotion">3%</span id="emotion"></p></div></div></div><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Raiva </p><p>Desgosto</p><p>Tristeza</p></div><div class="col-md-5 text-center"><p><span id="emotion">9%</span id="emotion"></p><p><span id="emotion">17%</span id="emotion"></p><p><span id="emotion">5%</span id="emotion"></p></div></div></div></div><div class="dropdown"><i onclick="myFunctionThree()" class="dropbtn-three fa fa-cog" aria-hidden="true"></i><div id="myDropdownThree" class="dropdown-content-three"><a href="#">Inteligência Artifical para  compreensão das emoções</a><a href="#">Comparar emoções à outros dados</a><a href="#">Período personalizado</a></div></div></p> ';
+
+        document.getElementById('mybarchart').setAttribute("src", a);
+        document.getElementById('datethree').innerHTML = b;
       }
 
       /* When the user clicks on the button, 
@@ -177,7 +216,25 @@
           }
         }
       }
+
+      function myFunctionThree() {
+          document.getElementById("myDropdownThree").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn-three')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-content-three");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
     </script>
   </body>
 </html>
-

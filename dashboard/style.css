@@ -5,8 +5,7 @@ html, body {
 }
 
 .container {
-  max-width: 1040px;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 /* header */
@@ -14,6 +13,7 @@ html, body {
 .header {
 	background-color: rgb(33, 3, 71);
 	height: 60px;
+	margin-bottom: 15px;
 }
 
 .header .container-fluid .pull-right ul a {
@@ -55,7 +55,6 @@ html, body {
 	margin-left: 15px;
 }
 
-
 /* data */
 
 
@@ -88,9 +87,9 @@ html, body {
 }
 
 .data .container .row .col-md-4 .mov {
-	background-color: rgb(41,26,76);
+	background-color: rgba(41,26,76,1);
 	border-radius: 5px;
-	width: 99%;
+	width: 100%;
 }
 .data .container .row .col-md-4 .sec {
 	margin-bottom: 5px;
@@ -118,6 +117,20 @@ html, body {
 	font-size: 15px;
 }
 
+.data .container .row .col-md-4 .sec #datethree {
+	margin-top: 10px;
+	font-size: 15px;
+}
+.data .container .row .col-md-4 .sec p span#legend {
+	padding: 8px 12px;
+	background-color: rgba(255, 225, 79,1);
+	border-radius: 0;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
 .data .container .row .col-md-4 .sec span {
 	padding: 5px 10px;
 	border-radius: 5px;
@@ -138,21 +151,17 @@ html, body {
 	border-top: 2px solid transparent;
 }
 
+.data .container .row p#test{
+	margin-top: 20px;
+	margin-bottom: 19px;
+}
+
 .data .container .row p strong#green:hover {
 	color: rgb(71, 237, 68);
 	border: 2px solid rgb(71, 237, 68);
 	transition: 0.5s;
 }
 
-.data .container .row p span#legend {
-	padding: 8px 12px;
-	background-color: rgb(255, 225, 79,1);
-	border-radius: 0;
-	display: inline-block;
-	margin-left: 8px;
-	margin-right: 2px;
-	margin-bottom: -3px;
-}
 .data .container .row p span#legendtwo {
 	padding: 8px 12px;
 	background-color: rgba(255, 0, 0,0.6);
@@ -173,11 +182,30 @@ html, body {
     margin-right: -12px;
 }
 
+.dropbtn-three {
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-right: -12px;
+    margin-top: 10px;
+
+}
+
 .dropbtn:hover, .dropbtn:focus {
     background-color: white; 
     color: rgb(41,26,76);
     border-radius: 5px;
 }
+
+.dropbtn-three:hover, .dropbtn:focus {
+    background-color: white; 
+    color: rgb(41,26,76);
+    border-radius: 5px;
+}
+
 
 .dropdown {
     position: relative;
@@ -188,7 +216,8 @@ html, body {
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
+    margin: -15px -20px -10px -100px;
     background-color: #f9f9f9;
     min-width: 160px;
     overflow: auto;
@@ -196,7 +225,25 @@ html, body {
     z-index: 1;
 }
 
+.dropdown-content-three {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: -15px -20px -10px -100px;
+}
+
 .dropdown-content a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-three a {
     color: black;
     padding: 12px 12px;
     text-decoration: none;
@@ -208,28 +255,43 @@ html, body {
 .show {display:block;}
 
 .data .container .row p strong#man {
-	color: rgba(18,160,255,1);
+	color: white;
 	font-size: 18px;
 	border: 2px solid rgba(18,160,255,1);
 	margin-left: 8px;
+	background-color: rgba(18,160,255,1);
 }
 
 .data .container .row p strong#man:hover {
 	color: rgba(18,160,255,1);
 	border: 2px solid rgba(18,160,255,1);
 	transition: 0.5s;
+	background-color: white;
 }
 
 .data .container .row p strong#woman {
-	color: rgba(206,95,250,1);
+	color: white;
 	font-size: 18px;
 	border: 2px solid rgba(206,95,250,1);
 	margin-left: 8px;
+	background-color: rgba(206,95,250,1);
 }
 
 .data .container .row p strong#woman:hover {
 	color: rgba(206,95,250,1);
 	border: 2px solid rgba(206,95,250,1);
 	transition: 0.5s;
+	background-color: white;
 }
 
+
+
+.data .container .row .mov span#emotion {
+	background-color: white;
+	padding: 0 10px;
+}
+
+.data .container .row .mov .col-md-6 p {
+	font-size: 15px;
+	font-weight: 800;
+}
