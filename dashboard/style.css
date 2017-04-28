@@ -95,10 +95,20 @@ html, body {
 	margin-bottom: 5px;
 }
 
+.data-two .container .row  .sec {
+	margin-bottom: 5px;
+}
+
 .data .container .row p {
 	color: white;
 	margin-bottom: 10px;
 }
+
+.data-two .container .row p {
+	color: white;
+	margin-bottom: 10px;
+}
+
 .data .container .row ul a li:hover {
 	color: white;
 	background-color: rgb(41,26,76);
@@ -107,7 +117,26 @@ html, body {
 	font-weight: 900;
 }
 
+.data-two .container .row ul a li:hover {
+	color: white;
+	background-color: rgb(41,26,76);
+	transition: 0.5s;
+	border: 1px solid white;
+	font-weight: 900;
+}
+
 .data .container .row .col-md-4 .sec #date {
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.data-two .container .sec #datefour {
+	margin-top: 10px;
+	font-size: 17px !important;
+	font-weight: 900;
+}
+
+.data .container .row .col-md-4 .sec #datetwo {
 	margin-top: 10px;
 	font-size: 15px;
 }
@@ -294,4 +323,51 @@ html, body {
 .data .container .row .mov .col-md-6 p {
 	font-size: 15px;
 	font-weight: 800;
+}
+
+
+/* data-two*/ 
+
+.data-two .container .row .col-md-6 h3 {
+	margin-top: 40px;
+}
+
+.data-two .container .row .col-md-6 span {
+	padding: 3px 8px;
+	background-color: rgba(41,26,76,1);
+	color: white;
+	border-radius: 5px;
+	border: 2px solid transparent;
+}
+
+.data-two .container .row .col-md-6 span:hover {
+	background-color: white;
+	color: rgba(41,26,76,1);
+	border: 2px solid rgba(41,26,76,1);
+	transition: 0.5s;
+}
+
+.data-two .container .row ul {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.data-two .container .row ul a li {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	background-color: white;
+	color: rgb(41,26,76);
+	padding: 3px 8px;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-right: 25px;
+	border: 1px solid transparent;
+	font-weight: 900;
+}
+
+.data-two .container .row .col-md-6 .mov {
+	background-color: rgba(41,26,76,1);
+	border-radius: 5px;
+	width: 100%;
 }
