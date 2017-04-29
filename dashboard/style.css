@@ -211,25 +211,7 @@ html, body {
     margin-right: -12px;
 }
 
-.dropbtn-three {
-    color: white;
-    padding: 5px;
-    font-size: 15px;
-    border: none;
-    cursor: pointer;
-    float: right;
-    margin-right: -12px;
-    margin-top: 10px;
-
-}
-
 .dropbtn:hover, .dropbtn:focus {
-    background-color: white; 
-    color: rgb(41,26,76);
-    border-radius: 5px;
-}
-
-.dropbtn-three:hover, .dropbtn:focus {
     background-color: white; 
     color: rgb(41,26,76);
     border-radius: 5px;
@@ -248,21 +230,10 @@ html, body {
     position: relative;
     margin: -15px -20px -10px -100px;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 260px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-}
-
-.dropdown-content-three {
-    display: none;
-    position: relative;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    margin: -15px -20px -10px -100px;
 }
 
 .dropdown-content a {
@@ -271,14 +242,6 @@ html, body {
     text-decoration: none;
     display: block;
 }
-
-.dropdown-content-three a {
-    color: black;
-    padding: 12px 12px;
-    text-decoration: none;
-    display: block;
-}
-
 .dropdown a:hover {background-color: rgba(41,26,76,0.9); color: white;}
 
 .show {display:block;}

@@ -39,15 +39,15 @@
             <img id="mychart" src="img/chart0.png" class="img-responsive"> 
             <div class="row mov sec">
               <div class="col-md-12 text-center">
-                <p id='date'><strong>Analise movimento do seu estabelecimento:</strong></p>
+                <p id='date'><strong>Analize o movimento do seu estabelecimento:</strong></p>
               </div>
             </div>  
             <div class="row mov">
               <div class="col-md-12 text-center">
                 <ul>
-                  <a href="#" onclick="changeChartTwo()" id=""><li>Dia</li></a>
-                  <a href="#" onclick="changeChart()"><li>Semana</li></a>
-                  <a href="#" onclick="changeChartThree()"><li>Mês</li></a>
+                  <a href="#mychart" onclick="changeChartTwo()" id=""><li>Dia</li></a>
+                  <a href="#mychart" onclick="changeChart()"><li>Semana</li></a>
+                  <a href="#mychart" onclick="changeChartThree()"><li>Mês</li></a>
                 </ul>
               </div>
             </div>  
@@ -63,9 +63,9 @@
             <div class="row mov">
               <div class="col-md-12 text-center">
                 <ul>
-                  <a href="#" onclick="changeChartPieOne()"><li>Dia</li></a>
-                  <a href="#" onclick="changeChartPieTwo()"><li>Semana</li></a>
-                  <a href="#" onclick="changeChartPieThree()"><li>Mês</li></a>
+                  <a href="#mypiechart" onclick="changeChartPieOne()"><li>Dia</li></a>
+                  <a href="#mypiechart" onclick="changeChartPieTwo()"><li>Semana</li></a>
+                  <a href="#mypiechart" onclick="changeChartPieThree()"><li>Mês</li></a>
                 </ul>
               </div>
             </div> 
@@ -81,9 +81,9 @@
             <div class="row mov">
               <div class="col-md-12 text-center">
                 <ul>
-                  <a href="#" onclick="changeChartBarOne()"><li>Dia</li></a>
-                  <a href="#" onclick="changeChartBarTwo()"><li>Semana</li></a>
-                  <a href="#" onclick="changeChartBarThree()"><li>Mês</li></a>
+                  <a href="#mybarchart" onclick="changeChartBarOne()"><li>Dia</li></a>
+                  <a href="#mybarchart" onclick="changeChartBarTwo()"><li>Semana</li></a>
+                  <a href="#mybarchart" onclick="changeChartBarThree()"><li>Mês</li></a>
                 </ul>
               </div>
             </div> 
@@ -112,8 +112,8 @@
               <div class="col-md-12 text-center">
                 <ul>
                   <a href="#myattchart" onclick="changeChartAttOne()"><li>Dia</li></a>
-                  <a href="#" onclick="changeChartAttTwo()"><li>Semana</li></a>
-                  <a href="#" onclick="changeChartAttThree()"><li>Mês</li></a>
+                  <a href="#myattchart" onclick="changeChartAttTwo()"><li>Semana</li></a>
+                  <a href="#myattchart" onclick="changeChartAttThree()"><li>Mês</li></a>
                 </ul>
               </div>
             </div> 
@@ -191,7 +191,7 @@
 
       function changeChartBarOne() {
         var a = "img/barchart1.png";
-        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong> </strong></p><div class="row"><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div><div class="col-md-5 text-center"><p><span id="emotion">65%</span id="emotion"></p><p><span id="emotion">33%</span id="emotion"></p><p><span id="emotion">15%</span id="emotion"></p></div></div></div><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Raiva </p><p>Desgosto</p><p>Tristeza</p></div><div class="col-md-5 text-center"><p><span id="emotion">10%</span id="emotion"></p><p><span id="emotion">18%</span id="emotion"></p><p><span id="emotion">25%</span id="emotion"></p></div></div></div></div><div class="dropdown"><i onclick="myFunctionThree()" class="dropbtn-three fa fa-cog" aria-hidden="true"></i><div id="myDropdownThree" class="dropdown-content-three"><a href="#">Inteligência Artifical para  compreensão das emoções</a><a href="#">Comparar emoções à outros dados</a><a href="#">Período personalizado</a></div></div></p> ';
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong> </strong></p><div class="row"><div class="col-md-6 col-xs-6 text-center"><div class="row"><div class="col-md-5 col-xs-6 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div><div class="col-md-5 col-xs-6 text-center"><p><span id="emotion">65%</span id="emotion"></p><p><span id="emotion">33%</span id="emotion"></p><p><span id="emotion">15%</span id="emotion"></p></div></div></div><div class="col-md-6 col-xs-6 text-center"><div class="row"><div class="col-md-5 col-xs-6 text-center"><p>Raiva </p><p>Desgosto</p><p>Tristeza</p></div><div class="col-md-5 col-xs-6 text-center"><p><span id="emotion">10%</span id="emotion"></p><p><span id="emotion">18%</span id="emotion"></p><p><span id="emotion">25%</span id="emotion"></p></div></div></div></div><div class="dropdown"><i onclick="myFunctionThree()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownThree" class="dropdown-content"><a href="#">Comparar períodos</a><a href="#">Comparar gêneros com outros dados</a></div></div></p> ';
 
         document.getElementById('mybarchart').setAttribute("src", a);
         document.getElementById('datethree').innerHTML = b;
@@ -199,7 +199,7 @@
 
       function changeChartBarTwo() {
         var a = "img/barchart2.png";
-        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual</strong> </strong></p><div class="row"><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div><div class="col-md-5 text-center"><p><span id="emotion">44%</span id="emotion"></p><p><span id="emotion">62%</span id="emotion"></p><p><span id="emotion">4%</span id="emotion"></p></div></div></div><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Raiva </p><p>Desgosto</p><p>Tristeza</p></div><div class="col-md-5 text-center"><p><span id="emotion">15%</span id="emotion"></p><p><span id="emotion">9%</span id="emotion"></p><p><span id="emotion">13%</span id="emotion"></p></div></div></div></div><div class="dropdown"><i onclick="myFunctionThree()" class="dropbtn-three fa fa-cog" aria-hidden="true"></i><div id="myDropdownThree" class="dropdown-content-three"><a href="#">Inteligência Artifical para  compreensão das emoções</a><a href="#">Comparar emoções à outros dados</a><a href="#">Período personalizado</a></div></div></p> ';
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual</strong> </strong></p><div class="row"><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div><div class="col-md-5 text-center"><p><span id="emotion">44%</span id="emotion"></p><p><span id="emotion">62%</span id="emotion"></p><p><span id="emotion">4%</span id="emotion"></p></div></div></div><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Raiva </p><p>Desgosto</p><p>Tristeza</p></div><div class="col-md-5 text-center"><p><span id="emotion">15%</span id="emotion"></p><p><span id="emotion">9%</span id="emotion"></p><p><span id="emotion">13%</span id="emotion"></p></div></div></div></div><div class="dropdown"><i onclick="myFunctionThree()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownThree" class="dropdown-content"><a href="#">Inteligência Artifical para  compreensão das emoções</a><a href="#">Comparar emoções à outros dados</a><a href="#">Período personalizado</a></div></div></p> ';
 
         document.getElementById('mybarchart').setAttribute("src", a);
         document.getElementById('datethree').innerHTML = b;
@@ -207,7 +207,7 @@
 
       function changeChartBarThree() {
         var a = "img/barchart3.png";
-        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong> </strong></p><div class="row"><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div><div class="col-md-5 text-center"><p><span id="emotion">71%</span id="emotion"></p><p><span id="emotion">19%</span id="emotion"></p><p><span id="emotion">3%</span id="emotion"></p></div></div></div><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Raiva </p><p>Desgosto</p><p>Tristeza</p></div><div class="col-md-5 text-center"><p><span id="emotion">9%</span id="emotion"></p><p><span id="emotion">17%</span id="emotion"></p><p><span id="emotion">5%</span id="emotion"></p></div></div></div></div><div class="dropdown"><i onclick="myFunctionThree()" class="dropbtn-three fa fa-cog" aria-hidden="true"></i><div id="myDropdownThree" class="dropdown-content-three"><a href="#">Inteligência Artifical para  compreensão das emoções</a><a href="#">Comparar emoções à outros dados</a><a href="#">Período personalizado</a></div></div></p> ';
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong> </strong></p><div class="row"><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div><div class="col-md-5 text-center"><p><span id="emotion">71%</span id="emotion"></p><p><span id="emotion">19%</span id="emotion"></p><p><span id="emotion">3%</span id="emotion"></p></div></div></div><div class="col-md-6 text-center"><div class="row"><div class="col-md-5 text-center"><p>Raiva </p><p>Desgosto</p><p>Tristeza</p></div><div class="col-md-5 text-center"><p><span id="emotion">9%</span id="emotion"></p><p><span id="emotion">17%</span id="emotion"></p><p><span id="emotion">5%</span id="emotion"></p></div></div></div></div><div class="dropdown"><i onclick="myFunctionThree()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownThree" class="dropdown-content"><a href="#">Inteligência Artifical para  compreensão das emoções</a><a href="#">Comparar emoções à outros dados</a><a href="#">Período personalizado</a></div></div></p> ';
 
         document.getElementById('mybarchart').setAttribute("src", a);
         document.getElementById('datethree').innerHTML = b;
@@ -215,48 +215,36 @@
 
       function changeChartAttOne() {
         var a = "img/barchartatratividade1.png";
+        var b = '<div class="row"><div class="col-md-12"><div class="row"><div class="col-md-6 text-center"><p>Total de pessoas que passaram em frente ao produto: <span>256</span></p><p>Pessoas atraídas pelo produto</p><p>Pessoas indiferentes com o produto</p><p>Nível de atratividade:</p></div><div class="col-md-6 text-center"><p>197 ~> <span>77%</span></p><p>59 ~> <span>23%</span></p><p>Alto</p></div></div></div></div>';
 
+        document.getElementById('datefour').innerHTML = b;
         document.getElementById('myattchart').setAttribute("src", a);
       }
+
+       function changeChartAttTwo() {
+        var a = "img/barchartatratividade2.png";
+        var b = "olá";
+        document.getElementById('datefour').innerHTML = b;
+        document.getElementById('myattchart').setAttribute("src", a);
+      }
+
+      function changeChartAttThree() {
+        var a = "img/barchartatratividade3.png";
+        var b = "olá";
+        document.getElementById('datefour').innerHTML = b;
+        document.getElementById('myattchart').setAttribute("src", a);
+      }
+
+
 
       /* When the user clicks on the button, 
       toggle between hiding and showing the dropdown content */
       function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
       }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
       
       function myFunctionTwo() {
           document.getElementById("myDropdownTwo").classList.toggle("show");
-      }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
       }
 
 
@@ -266,9 +254,9 @@
 
       // Close the dropdown if the user clicks outside of it
       window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn-three')) {
+        if (!event.target.matches('.dropbtn')) {
 
-          var dropdowns = document.getElementsByClassName("dropdown-content-three");
+          var dropdowns = document.getElementsByClassName("dropdown-content");
           var i;
           for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
@@ -278,6 +266,7 @@
           }
         }
       }
-    </script>
+
+    </script><div class="row"><div class="col-md-12"><div class="row"><div class="col-md-6 text-center"><p>Início da análise:</p><p>Total de pessoas que passaram em frente ao produto</p><p>Pessoas atraídas pelo produto</p><p>Pessoas indiferentes com o produto</p><p>Nível de atratividade:</p></div><div class="col-md-6 text-center"><p>01/05/17</p><p>256</p><p>197 ~> <span>77%</span></p><p>59 ~> <span>23%</span></p><p>Alto</p></div></div></div></div>
   </body>
 </html>
