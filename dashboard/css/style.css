@@ -95,7 +95,7 @@ html, body {
 	margin-bottom: 5px;
 }
 
-.data-two .container .row  .sec {
+.data-two .container .row .sec {
 	margin-bottom: 5px;
 }
 
@@ -107,6 +107,7 @@ html, body {
 .data-two .container .row p {
 	color: white;
 	margin-bottom: 10px;
+	margin-top: 15px;
 }
 
 .data .container .row ul a li:hover {
@@ -171,13 +172,12 @@ html, body {
 }
 
 .data .container .row p strong#green {
-	color: rgb(71, 237, 68);
-	font-size: 18px;
+	font-size: 17px;
 	float: right;
-	border-bottom: 2px solid rgba(71, 237, 68);
-	border-right: 2px solid transparent;
-	border-left: 2px solid transparent;
-	border-top: 2px solid transparent;
+	background-color: rgba(46,204,113,1);
+	color: white; 
+	padding: 0 5px;
+	border: 2px solid transparent;
 }
 
 .data .container .row p#test{
@@ -186,9 +186,10 @@ html, body {
 }
 
 .data .container .row p strong#green:hover {
-	color: rgb(71, 237, 68);
-	border: 2px solid rgb(71, 237, 68);
 	transition: 0.5s;
+	color: rgba(46,204,113,1);
+	background-color: rgba(255,255,255);
+	border: 2px solid rgba(46,204,113,1);
 }
 
 .data .container .row p span#legendtwo {
@@ -295,19 +296,75 @@ html, body {
 	margin-top: 40px;
 }
 
-.data-two .container .row .col-md-6 span {
-	padding: 3px 8px;
+.data-two .container .row .col-md-6 span#dudalina {
+	padding: 2px 7px;
 	background-color: rgba(41,26,76,1);
 	color: white;
 	border-radius: 5px;
 	border: 2px solid transparent;
-}
+} 
 
-.data-two .container .row .col-md-6 span:hover {
+.data-two .container .row .col-md-6 span#dudalina:hover {
+	padding: 2px 7px;
+	background-color: white;
+	color: rgba(41,26,76,1);
+	border-radius: 5px;
+	border: 2px solid rgba(41,26,76,1);
+} 
+
+
+
+.data-two .container .row .col-md-6 span {
 	background-color: white;
 	color: rgba(41,26,76,1);
 	border: 2px solid rgba(41,26,76,1);
 	transition: 0.5s;
+	padding: 2px 8px;
+	border-radius: 5px;
+	border: 2px solid transparent;
+}
+
+.data-two .container .row .col-md-6 span#natraidos {
+	padding: 0 7px;
+	border-radius: 5px;
+	background-color: rgba(255, 0, 0,0.5);
+	color: white; 
+	margin-left: 8px;
+}
+
+.data-two .container .row .col-md-6 span#natraidos:hover {
+	background-color: white;
+	border: 2px solid rgba(255, 0, 0,1);
+	color: rgba(255, 0, 0,1);
+}
+
+.data-two .container .row .col-md-6 span#atraidos {
+	background-color: rgba(46,204,113,1);
+	margin-left: 8px;
+	color: white; 
+	border-radius: 5px;
+	padding: 0 7px;
+	border: 2px solid transparent;
+}
+
+.data-two .container .row .col-md-6 span#atraidos:hover {
+	background-color: white; 
+	color: rgba(46,204,113,1);
+	transition: 0.5s;
+	border: 2px solid rgba(46,204,113,1);
+}
+
+.data-two .container .row .col-md-6 span#nivel {
+	background-color: rgba(46,204,113,1); 
+	color: white;
+	border: 2px solid transparent;
+}
+
+.data-two .container .row .col-md-6 span#nivel:hover {
+	color: rgba(46,204,113,1);
+	transition: 0.5s;
+	background-color: rgba(255,255,255);
+	border: 2px solid rgba(46,204,113,1);
 }
 
 .data-two .container .row ul {

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"> 
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+    </script>
 
   </head>
   <body>
@@ -99,7 +109,7 @@
             <div class="row">
               <div class="col-md-12">
                 <h3>Nível de Atratividade</h3>
-                <h4>Você está medindo a atratividade do produto <span>Camisa Dudalina</span></h4>
+                <h4>Você está medindo a atratividade do produto <span id="dudalina">Camisa Dudalina</span></h4>
                 <img src="img/barchartatratividade0.png" class="img-responsive" id="myattchart">
               </div>
             </div>  
@@ -119,7 +129,39 @@
             </div> 
           </div>
           <div class="col-md-6 text-center">
-            <h3>Análise de Demografia</h3>
+            <div class="row">
+              <div class="col-md-12">
+                <h3>Análise de Demografia</h3>
+                <h4>Você está medindo a atratividade do produto <span id="dudalina">Camisa Dudalina</span></h4>
+                <img src="img/barchartatratividade0.png" class="img-responsive" id="myattchart">
+              </div>
+            </div>  
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='datefour'><strong>Descubra o potencial do produto:</strong></p>
+              </div>
+            </div> 
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a href="#myattchart" onclick="changeChartAttOne()"><li>Dia</li></a>
+                  <a href="#myattchart" onclick="changeChartAttTwo()"><li>Semana</li></a>
+                  <a href="#myattchart" onclick="changeChartAttThree()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="data-three">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Análises avançadas</h2>
+            <img src="img/chartmix.png" class="img-responsive">
+            <p>Date: <input type="text" id="datepicker"></p>
           </div>
         </div>
       </div>
@@ -133,6 +175,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
+
+    function() {
+      $( "#datepicker" ).datepicker();
+    }
 
       function changeChart() {
         var a = "img/chart2.png";
@@ -215,7 +261,18 @@
 
       function changeChartAttOne() {
         var a = "img/barchartatratividade1.png";
-        var b = '<div class="row"><div class="col-md-12"><div class="row"><div class="col-md-6 text-center"><p>Total de pessoas que passaram em frente ao produto: <span>256</span></p><p>Pessoas atraídas pelo produto</p><p>Pessoas indiferentes com o produto</p><p>Nível de atratividade:</p></div><div class="col-md-6 text-center"><p>197 ~> <span>77%</span></p><p>59 ~> <span>23%</span></p><p>Alto</p></div></div></div></div>';
+        var b = '<div class="row">\
+                  <div class="col-md-12">\
+                    <div class="row">\
+                      <div class="col-md-12 text-center">\
+                        <p>Passaram em frente ao produto: <span>256 pessoas</span></p>\
+                        <p><span>197 pessoas atraídas pelo produto</span><span id="atraidos"> 77%</span></p>\
+                        <p><span> 59 pessoas indiferentes com o produto</span><span id="natraidos"> 23%</span></p>\
+                        <p>Nível de atratividade: <span id="nivel">Alto</span></p>\
+                      </div>\
+                    </div>\
+                  </div>\
+                </div>';
 
         document.getElementById('datefour').innerHTML = b;
         document.getElementById('myattchart').setAttribute("src", a);
@@ -267,6 +324,6 @@
         }
       }
 
-    </script><div class="row"><div class="col-md-12"><div class="row"><div class="col-md-6 text-center"><p>Início da análise:</p><p>Total de pessoas que passaram em frente ao produto</p><p>Pessoas atraídas pelo produto</p><p>Pessoas indiferentes com o produto</p><p>Nível de atratividade:</p></div><div class="col-md-6 text-center"><p>01/05/17</p><p>256</p><p>197 ~> <span>77%</span></p><p>59 ~> <span>23%</span></p><p>Alto</p></div></div></div></div>
+    </script>
   </body>
 </html>
