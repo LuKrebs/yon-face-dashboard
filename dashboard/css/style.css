@@ -16,59 +16,85 @@ html, body {
 	margin-bottom: 15px;
 }
 
-.header .container-fluid .pull-right ul a {
-	text-decoration: none;
+.header .container-fluid .pull-left img {
+	width: 95px;
+	margin-left: 15px;
 }
 
-.header .container-fluid .pull-right ul a li.images, .header .container-fluid .pull-right ul a li.br {
-	margin-top: 10px !important;
+/*  header buttons / header buttons:hover*/
+
+.header .container-fluid .pull-right .dropbtn-header {
+    background-color: rgb(33, 3, 71);
+    color: white;
+    padding: 3px 8px;
+    font-size: 17px;
+    border: 1px solid transparent;
+    cursor: pointer;
+	margin-top: 10px;
+
 }
 
-.header .container-fluid .pull-right ul a li {
-	list-style: none;
-	display: inline-block;
-	color: white;
+.header .container-fluid .pull-right .dropdown-header {
+    position: relative;
+    display: inline-block;
+}
+
+.header .container-fluid .pull-right .dropdown-content-header {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 85px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.header .container-fluid .pull-right .dropdown-content-header a {
+    color: rgb(33, 3, 71);
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.header .container-fluid .pull-right .dropdown-content-header a:hover {
 	background-color: rgb(33, 3, 71);
-	margin-top: 15px;
-	margin-left: 20px;
-	border-bottom: 1px solid transparent;
-	border-top: 1px solid transparent;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	transition: 0.7s;
-	font-size: 17px;
-	padding: 3px 8px;
+	color: white;
 }
-.header .container-fluid .pull-right ul a li:hover {
+
+.header .container-fluid .pull-right .dropdown-header:hover .dropdown-content-header {
+    display: block;
+}
+
+.header .container-fluid .pull-right .dropdown-header:hover .dropbtn-header {
 	border: 1px solid white;
 	background-color: white;
 	color: rgb(33, 3, 71);
 	transition: 0.5s;
 }
 
-.header .container-fluid .pull-left img {
-	width: 95px;
-	margin-left: 15px;
-}
-
 /* data */
 
 
-.data .container .row .col-md-4 img {
+.data .container-fluid .row .col-md-4 img {
 	margin: 0 auto;
 }
 
-.data .container .row ul {
+.data-two .container-fluid .row .col-md-6 img {
+	margin: 0 auto;
+}
+
+
+.data .container-fluid .row ul {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-.data .container .row .col-md-4 .sec p#estabelecimento {
+.data .container-fluid .row .col-md-4 .sec p#estabelecimento {
 	margin-top: 10px;
 	margin-left: 50px;
 }
 
-.data .container .row ul a li {
+.data .container-fluid .row ul a li {
 	list-style: none;
 	display: inline-block;
 	text-align: center;
@@ -82,28 +108,28 @@ html, body {
 	font-weight: 900;
 }
 
-.data .container .row .col-md-4 .mov {
+.data .container-fluid .row .col-md-4 .mov {
 	background-color: rgba(41,26,76,1);
 	border-radius: 5px;
 	width: 100%;
 	margin: 0 auto;
 }
-.data .container .row .col-md-4 .sec {
+.data .container-fluid .row .col-md-4 .sec {
 	margin-bottom: 5px;
 }
 
-.data .container .row p {
+.data .container-fluid .row p {
 	color: white;
 	margin-bottom: 10px;
 }
 
-.data-two .container .row p {
+.data-two .container-fluid .row p {
 	color: white;
 	margin-bottom: 10px;
 	margin-top: 15px;
 }
 
-.data .container .row ul a li:hover {
+.data .container-fluid .row ul a li:hover {
 	color: white;
 	background-color: rgb(41,26,76);
 	transition: 0.5s;
@@ -111,7 +137,7 @@ html, body {
 	font-weight: 900;
 }
 
-.data-two .container .row ul a li:hover {
+.data-two .container-fluid .row ul a li:hover {
 	color: white;
 	background-color: rgb(41,26,76);
 	transition: 0.5s;
@@ -119,32 +145,38 @@ html, body {
 	font-weight: 900;
 }
 
-.data .container .row .col-md-4 .sec #date {
+.data .container-fluid .row .col-md-4 .sec #date {
 	margin-top: 10px;
 	font-size: 15px;
 }
 
-.data-two .container .sec #datefour {
+.data-two .container-fluid .sec #datefour {
 	margin-top: 10px;
 	font-size: 17px !important;
 	font-weight: 900;
 }
 
-.data .container .row .col-md-4 .sec #datetwo {
+.data-two .container-fluid .sec #datefive {
+	margin-top: 10px;
+	font-size: 17px !important;
+	font-weight: 900;
+}
+
+.data .container-fluid .row .col-md-4 .sec #datetwo {
 	margin-top: 10px;
 	font-size: 15px;
 }
 
-.data .container .row .col-md-4 .sec #datetwo {
+.data .container-fluid .row .col-md-4 .sec #datetwo {
 	margin-top: 10px;
 	font-size: 15px;
 }
 
-.data .container .row .col-md-4 .sec #datethree {
+.data .container-fluid .row .col-md-4 .sec #datethree {
 	margin-top: 10px;
 	font-size: 15px;
 }
-.data .container .row .col-md-4 .sec p span#legend {
+.data .container-fluid .row .col-md-4 .sec p span#legend {
 	padding: 8px 12px;
 	background-color: rgba(255, 225, 79,1);
 	border-radius: 0;
@@ -154,7 +186,7 @@ html, body {
 	margin-bottom: -3px;
 }
 
-.data .container .row .col-md-4 .sec span {
+.data .container-fluid .row .col-md-4 .sec span {
 	padding: 5px 10px;
 	border-radius: 5px;
 	background-color: white;
@@ -164,7 +196,7 @@ html, body {
 	text-align: center;
 }
 
-.data .container .row p strong#green {
+.data .container-fluid .row p strong#green {
 	font-size: 17px;
 	float: right;
 	background-color: rgba(46,204,113,1);
@@ -173,19 +205,19 @@ html, body {
 	border: 2px solid transparent;
 }
 
-.data .container .row p#test{
+.data .container-fluid .row p#test{
 	margin-top: 20px;
 	margin-bottom: 19px;
 }
 
-.data .container .row p strong#green:hover {
+.data .container-fluid .row p strong#green:hover {
 	transition: 0.5s;
 	color: rgba(46,204,113,1);
 	background-color: white;
 	border: 2px solid rgba(46,204,113,1);
 }
 
-.data .container .row p span#legendtwo {
+.data .container-fluid .row p span#legendtwo {
 	padding: 8px 12px;
 	background-color: rgba(255, 0, 0,0.6);
 	border-radius: 0;
@@ -244,7 +276,7 @@ html, body {
 
 .show {display:block;}
 
-.data .container .row p strong#man {
+.data .container-fluid .row p strong#man {
 	color: white;
 	font-size: 18px;
 	border: 2px solid rgba(18,160,255,1);
@@ -252,14 +284,14 @@ html, body {
 	background-color: rgba(18,160,255,1);
 }
 
-.data .container .row p strong#man:hover {
+.data .container-fluid .row p strong#man:hover {
 	color: rgba(18,160,255,1);
 	border: 2px solid rgba(18,160,255,1);
 	transition: 0.5s;
 	background-color: white;
 }
 
-.data .container .row p strong#woman {
+.data .container-fluid .row p strong#woman {
 	color: white;
 	font-size: 18px;
 	border: 2px solid rgba(206,95,250,1);
@@ -267,7 +299,7 @@ html, body {
 	background-color: rgba(206,95,250,1);
 }
 
-.data .container .row p strong#woman:hover {
+.data .container-fluid .row p strong#woman:hover {
 	color: rgba(206,95,250,1);
 	border: 2px solid rgba(206,95,250,1);
 	transition: 0.5s;
@@ -276,12 +308,12 @@ html, body {
 
 
 
-.data .container .row .mov span#emotion {
+.data .container-fluid .row .mov span#emotion {
 	background-color: white;
 	padding: 0 10px;
 }
 
-.data .container .row .mov .col-md-6 p {
+.data .container-fluid .row .mov .col-md-6 p {
 	font-size: 15px;
 	font-weight: 800;
 }
@@ -289,11 +321,11 @@ html, body {
 
 /* data-two*/ 
 
-.data-two .container .row .col-md-6 h3 {
+.data-two .container-fluid .row .col-md-6 h3 {
 	margin-top: 40px;
 }
 
-.data-two .container .row .col-md-6 span#dudalina {
+.data-two .container-fluid .row .col-md-6 span#dudalina {
 	padding: 2px 7px;
 	background-color: rgba(41,26,76,1);
 	color: white;
@@ -301,7 +333,7 @@ html, body {
 	border: 2px solid transparent;
 } 
 
-.data-two .container .row .col-md-6 span#dudalina:hover {
+.data-two .container-fluid .row .col-md-6 span#dudalina:hover {
 	padding: 2px 7px;
 	background-color: white;
 	color: rgba(41,26,76,1);
@@ -311,7 +343,7 @@ html, body {
 
 
 
-.data-two .container .row .col-md-6 span {
+.data-two .container-fluid .row .col-md-6 span {
 	background-color: white;
 	color: rgba(41,26,76,1);
 	border: 2px solid rgba(41,26,76,1);
@@ -321,7 +353,7 @@ html, body {
 	border: 2px solid transparent;
 }
 
-.data-two .container .row .col-md-6 span#natraidos {
+.data-two .container-fluid .row .col-md-6 span#natraidos {
 	padding: 0 7px;
 	border-radius: 5px;
 	background-color: rgba(255, 0, 0,0.5);
@@ -329,13 +361,13 @@ html, body {
 	margin-left: 8px;
 }
 
-.data-two .container .row .col-md-6 span#natraidos:hover {
+.data-two .container-fluid .row .col-md-6 span#natraidos:hover {
 	background-color: white;
 	border: 2px solid rgba(255, 0, 0,1);
 	color: rgba(255, 0, 0,1);
 }
 
-.data-two .container .row .col-md-6 span#atraidos {
+.data-two .container-fluid .row .col-md-6 span#atraidos {
 	background-color: rgba(46,204,113,1);
 	margin-left: 8px;
 	color: white; 
@@ -344,38 +376,38 @@ html, body {
 	border: 2px solid transparent;
 }
 
-.data-two .container .row .col-md-6 span#atraidos:hover {
+.data-two .container-fluid .row .col-md-6 span#atraidos:hover {
 	background-color: white; 
 	color: rgba(46,204,113,1);
 	transition: 0.5s;
 	border: 2px solid rgba(46,204,113,1);
 }
 
-.data-two .container .row .col-md-6 span#nivel {
+.data-two .container-fluid .row .col-md-6 span#nivel {
 	background-color: rgba(46,204,113,1); 
 	color: white;
 	border: 2px solid transparent;
 }
 
-.data-two .container .row .col-md-6 span#niveltwo {
+.data-two .container-fluid .row .col-md-6 span#niveltwo {
 	background-color: white; 
 	color: white;
 	border: 2px solid transparent;
 }
 
-.data-two .container .row .col-md-6 span#nivel:hover {
+.data-two .container-fluid .row .col-md-6 span#nivel:hover {
 	color: rgba(46,204,113,1);
 	transition: 0.5s;
 	background-color: white;
 	border: 2px solid rgba(46,204,113,1);
 }
 
-.data-two .container .row ul {
+.data-two .container-fluid .row ul {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-.data-two .container .row ul a li {
+.data-two .container-fluid .row ul a li {
 	list-style: none;
 	display: inline-block;
 	text-align: center;
@@ -389,7 +421,7 @@ html, body {
 	font-weight: 900;
 }
 
-.data-two .container .row .col-md-6 .mov {
+.data-two .container-fluid .row .col-md-6 .mov {
 	background-color: rgba(41,26,76,1);
 	border-radius: 5px;
 	width: 100%;
@@ -397,64 +429,82 @@ html, body {
 }
 
 @media (max-width: 1200px) {
-	.data .container .row ul a li {
+	.data .container-fluid .row ul a li {
 		padding: 3px 5px;
 	}
 }
 
 @media (max-width: 485px) {
-	.data-two .container .row .col-md-6 .row span#dudalina {
+	.data-two .container-fluid .row .col-md-6 .row span#dudalina {
 		margin-top: 15px;
 		float: left;
 		margin-left: 37%;
 	}
-	.data .container .row .col-md-4 img#mychart {
+	.data .container-fluid .row .col-md-4 img#mychart {
 		margin-left: 3%;
 	}	
-	.header .container-fluid .pull-right ul a li {
-		font-size: 16px;
-		color: white;
-		margin-left: 5px;
-	}
+
 	.header .container-fluid .pull-left img {
 		width: 95px;
 		margin-left: 0;
 	}
 }
 
-@media (max-width: 340px) {
+@media (max-width: 410px) {
+	.header .container-fluid .pull-right .dropbtn-header {
+    	padding: 3px 5px;
+    	font-size: 14px;
+	}
+	.header .container-fluid .pull-right .dropdown-content-header {
+		min-width: 55px;
+	}
+	.header .container-fluid .pull-right .dropdown-content-header a {
+    padding: 8px;
+    font-size: 13px;
+	}
+}
+
+@media (max-width: 400px) {
+	.data-two .container-fluid .row .col-md-6 .mov p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 370px) {
 	.header {
 		height: 40px;
 	}
 	.header .container-fluid .pull-left img {
 		width: 55px;
 	}
-	.header .container-fluid .pull-right ul a li {
-		font-size: 14px;
-		margin-top: 8px;
-
-	}
-	.data .container .row .col-md-4 img#mychart {
+	.data .container-fluid .row .col-md-4 img#mychart {
 		margin-left: 2%;
 	}	
+	.header .container-fluid .pull-right .dropbtn-header {
+		margin-top: 3px;
+	}
 }
 
-
-/* .header .container-fluid .pull-left img {
-	width: 95px;
-	margin-left: 15px;
+@media (max-width: 330px) {
+	.header .container-fluid .pull-left img {
+		display: none;
+	}
+	.data .container-fluid .row ul a li {
+		float: left;
+		display: inline-block;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		padding: 1px;
+	}
+	.data-two .container-fluid .row ul a li {
+		float: left;
+		display: inline-block;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		padding: 1px;
+	}
+	.data-two .container-fluid .row .col-md-6 .mov p {
+		font-size: 10px;
+	}
 }
 
-
-.header .container-fluid .pull-right ul a li {
-	list-style: none;
-	display: inline-block;
-	color: white;
-	margin-top: 15px;
-	margin-left: 20px;
-	border: 1px solid transparent;
-	transition: 0.7s;
-	font-size: 18px;
-}
-
-*/

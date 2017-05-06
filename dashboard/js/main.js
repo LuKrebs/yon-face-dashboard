@@ -76,7 +76,7 @@
       function changeChartBarTwo() {
         var a = "img/barchart2.png";
         var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
-          <strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong> </strong></p>\
+          <strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual</strong> </strong></p>\
           <div class="row"><div class="col-md-6 col-xs-6 text-center"><div class="row">\
           <div class="col-md-5 col-xs-6 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div>\
           <div class="col-md-5 col-xs-6 text-center"><p><span id="emotion">44%</span id="emotion"></p><p><span id="emotion">62%</span id="emotion"></p>\
@@ -95,7 +95,7 @@
       function changeChartBarThree() {
         var a = "img/barchart3.png";
         var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
-          <strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong> </strong></p>\
+          <strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong> </strong></p>\
           <div class="row"><div class="col-md-6 col-xs-6 text-center"><div class="row">\
           <div class="col-md-5 col-xs-6 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div>\
           <div class="col-md-5 col-xs-6 text-center"><p><span id="emotion">71%</span id="emotion"></p><p><span id="emotion">19%</span id="emotion"></p>\
@@ -114,9 +114,9 @@
       function changeChartAttOne() {
         var a = "img/barchartatratividade1.png";
         var b = '<div class="row">\
-                  <div class="col-md-12">\
+                  <div class="col-md-12 col-xs-12">\
                     <div class="row">\
-                      <div class="col-md-12 text-center">\
+                      <div class="col-md-12 col-xs-12 text-center">\
                         <p>Passaram em frente ao produto: <span>256 pessoas</span></p>\
                         <p><span>197 pessoas atraídas pelo produto</span><span id="atraidos"> 77%</span></p>\
                         <p><span> 59 pessoas indiferentes com o produto</span><span id="natraidos"> 23%</span></p>\
@@ -143,7 +143,7 @@
                   <div class="col-md-12">\
                     <div class="row">\
                       <div class="col-md-12 text-center">\
-                        <p>Passaram em frente ao produto: <span>256 pessoas</span></p>\
+                        <p>Passaram em frente ao produto: <span> 1.326 pessoas</span></p>\
                         <p><span>835 pessoas atraídas pelo produto</span><span id="atraidos"> 63%</span></p>\
                         <p><span>491 pessoas indiferentes com o produto</span><span id="natraidos"> 37%</span></p>\
                         <p>Nível de atratividade: <span id="nivel">Médio</span></p>\
@@ -168,9 +168,9 @@
                   <div class="col-md-12">\
                     <div class="row">\
                       <div class="col-md-12 text-center">\
-                        <p>Passaram em frente ao produto: <span>256 pessoas</span></p>\
-                        <p><span>1558 pessoas atraídas pelo produto</span><span id="atraidos"> 36%</span></p>\
-                        <p><span>2770 pessoas indiferentes com o produto</span><span id="natraidos"> 51%</span></p>\
+                        <p>Passaram em frente ao produto: <span>4.328 pessoas</span></p>\
+                        <p><span>1.558 pessoas atraídas pelo produto</span><span id="atraidos"> 36%</span></p>\
+                        <p><span>2.770 pessoas indiferentes com o produto</span><span id="natraidos"> 51%</span></p>\
                         <p>Nível de atratividade: <span id="nivel">Baixo</span></p>\
                       </div>\
                     </div>\
@@ -189,6 +189,7 @@
 
       function changeProduct() {
         var a = prompt("Qual produto você deseja medir a atratividade?");
+        confirm("Produto alterado com sucesso");
         var b = '<div class="row">\
                   <div class="col-md-12">\
                     <div class="row">\
@@ -213,6 +214,132 @@
         document.getElementById('datefour').innerHTML = b;
       }
 
+      function changeChartDemoOne() {
+        var a = "img/barchartdemografia1.png"
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
+                  <strong>Detalhes sobre Demografia: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong> </strong></p>\
+                  <div class="row">\
+                    <div class="col-md-6 col-xs-6 text-center">\
+                      <div class="row">\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p>Criança </p>\
+                          <p>Jovem</p>\
+                        </div>\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p><span id="emotion">3%</span id="emotion"></p>\
+                          <p><span id="emotion">37%</span id="emotion"></p>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <div class="col-md-6 col-xs-6 text-center">\
+                      <div class="row">\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p>Adulto </p>\
+                          <p>Idoso</p>\
+                        </div>\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p><span id="emotion">51%</span id="emotion"></p>\
+                          <p><span id="emotion">9%</span id="emotion"></p>\
+                        </div>\
+                      </div>\
+                    </div>\
+                  </div>\
+                  <div class="dropdown">\
+                    <i onclick="myFunctionFive()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                    <div id="myDropdownFive" class="dropdown-content">\
+                      <a href="#">Comparar períodos</a>\
+                      <a href="#">Comparar demografia com outros dados</a>\
+                    </div>\
+                  </div>';
+
+        document.getElementById('datefive').innerHTML = b;  
+        document.getElementById('mydemochart').setAttribute("src", a);      
+      }
+
+      function changeChartDemoTwo() {
+        var a = "img/barchartdemografia2.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
+                  <strong>Detalhes sobre Demografia: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual</strong> </strong></p>\
+                  <div class="row">\
+                    <div class="col-md-6 col-xs-6 text-center">\
+                      <div class="row">\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p>Criança </p>\
+                          <p>Jovem</p>\
+                        </div>\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p><span id="emotion">12%</span id="emotion"></p>\
+                          <p><span id="emotion">48%</span id="emotion"></p>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <div class="col-md-6 col-xs-6 text-center">\
+                      <div class="row">\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p>Adulto </p>\
+                          <p>Idoso</p>\
+                        </div>\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p><span id="emotion">31%</span id="emotion"></p>\
+                          <p><span id="emotion">12%</span id="emotion"></p>\
+                        </div>\
+                      </div>\
+                    </div>\
+                  </div>\
+                  <div class="dropdown">\
+                    <i onclick="myFunctionFive()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                    <div id="myDropdownFive" class="dropdown-content">\
+                      <a href="#">Comparar períodos</a>\
+                      <a href="#">Comparar demografia com outros dados</a>\
+                    </div>\
+                  </div>';
+
+        document.getElementById('datefive').innerHTML = b;
+        document.getElementById('mydemochart').setAttribute("src", a);
+
+      }
+
+      function changeChartDemoThree() {
+        var a = "img/barchartdemografia3.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
+                  <strong>Detalhes sobre Demografia: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong> </strong></p>\
+                  <div class="row">\
+                    <div class="col-md-6 col-xs-6 text-center">\
+                      <div class="row">\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p>Criança </p>\
+                          <p>Jovem</p>\
+                        </div>\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p><span id="emotion">6%</span id="emotion"></p>\
+                          <p><span id="emotion">31%</span id="emotion"></p>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <div class="col-md-6 col-xs-6 text-center">\
+                      <div class="row">\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p>Adulto </p>\
+                          <p>Idoso</p>\
+                        </div>\
+                        <div class="col-md-5 col-xs-6 text-center">\
+                          <p><span id="emotion">53%</span id="emotion"></p>\
+                          <p><span id="emotion">10%</span id="emotion"></p>\
+                        </div>\
+                      </div>\
+                    </div>\
+                  </div>\
+                  <div class="dropdown">\
+                    <i onclick="myFunctionFive()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                    <div id="myDropdownFive" class="dropdown-content">\
+                      <a href="#">Comparar períodos</a>\
+                      <a href="#">Comparar demografia com outros dados</a>\
+                    </div>\
+                  </div>';
+        document.getElementById('datefive').innerHTML = b;
+        document.getElementById('mydemochart').setAttribute("src", a);
+      }
+
 
 
       /* When the user clicks on the button, 
@@ -232,6 +359,9 @@
 
       function myFunctionFour() {
           document.getElementById("myDropdownFour").classList.toggle("show");
+      }
+      function myFunctionFive() {
+          document.getElementById("myDropdownFive").classList.toggle("show");
       }
 
       // Close the dropdown if the user clicks outside of it

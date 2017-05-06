@@ -21,16 +21,27 @@
           <a href="#"><img src="img/logo.png" class="img-responsive"></a>
         </div>
         <div class="pull-right">
-          <ul>
-            <a href="#"><li>Relatórios</li></a> 
-            <a href="#"><li>Configurações</li></a>
-          </ul>
+          <div class="dropdown-header">
+            <button class="dropbtn-header">Relatórios</button>
+            <div class="dropdown-content-header">
+              <a href="#">Estatística</a>
+              <a href="#">Relatórios</a>
+            </div>
+          </div>
+          <div class="dropdown-header">
+            <button class="dropbtn-header">Configurações</button>
+            <div class="dropdown-content-header">
+              <a href="#">Perfil</a>
+              <a href="#">Administração</a>
+              <a href="#">Manual do Sistema</a>
+            </div>
+          </div>
         </div>
       </div>
     </div> <!--end: header --> 
 
     <div class="data">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-4 text-center">
             <h3>Análise do Fluxo de pessoas</h3> 
@@ -88,10 +99,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> <!--end: data -->
 
     <div class="data-two">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 text-center">
             <div class="row">
@@ -119,29 +130,29 @@
           <div class="col-md-6 text-center">
             <div class="row">
               <div class="col-md-12">
-                <h3>Análise de Demografia</h3>
-                <h4>Você está medindo a atratividade do produto <span id="dudalina">Camisa Dudalina</span></h4>
-                <img src="img/barchartatratividade0.png" class="img-responsive" id="myattchart">
+                <h3 id="second-second-container">Análise de Demografia</h3>
+                <h4>Descubra a faixa etária do seu público</h4>
+                <img src="img/barchartdemografia1.png" class="img-responsive" id="mydemochart">
               </div>
             </div>  
             <div class="row mov sec">
               <div class="col-md-12 text-center">
-                <p id='datefour'><strong>Descubra o potencial do produto:</strong></p>
+                <p id='datefive'><strong>Analize as demografias predominantes:</strong></p>
               </div>
             </div> 
             <div class="row mov">
               <div class="col-md-12 text-center">
                 <ul>
-                  <a href="#myattchart" onclick="changeChartAttOne()"><li>Dia</li></a>
-                  <a href="#myattchart" onclick="changeChartAttTwo()"><li>Semana</li></a>
-                  <a href="#myattchart" onclick="changeChartAttThree()"><li>Mês</li></a>
+                  <a href="#second-second-container" onclick="changeChartDemoOne()"><li>Dia</li></a>
+                  <a href="#second-second-container" onclick="changeChartDemoTwo()"><li>Semana</li></a>
+                  <a href="#second-second-container" onclick="changeChartDemoThree()"><li>Mês</li></a>
                 </ul>
               </div>
             </div> 
           </div>
         </div>
       </div>
-    </div>
+    </div> <!--end: data-two -->
 
     <div class="data-three">
       <div class="container">
