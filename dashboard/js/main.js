@@ -1,27 +1,121 @@
 
       function changeChart() {
         var a = "img/chart2.png";
-        var b = '<p id="estabelecimento" class="text-center"><strong>Fluxo de pessoas: <strong id="green"> +21%</strong></strong></p><span><strong class="text-center"> Semana atual: 1.326  </strong></span></p><p> <strong class="text-center">Semana anterior: 922 </strong></p><p><span id="legend"></span> Semana atual <span id="legendtwo"></span> Semana anterior <div class="dropdown"><i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdown" class="dropdown-content"><a href="#">Apenas a Semana atual</a><a href="#">Apenas a Semana anterior</a><a href="#">Mais opções de gráfico</a></div></div></p> ';
+        var b = '<p id="estabelecimento" class="text-center">\
+                  <strong>Fluxo de pessoas: <strong id="green"> +21%</strong></strong>\
+                </p>\
+                <span><strong class="text-center"> Semana atual: 1.326  </strong></span></p>\
+                <p> <strong class="text-center">Semana anterior: 922 </strong></p>\
+                <p><span id="legend"></span> Semana atual <span id="legendtwo"></span> Semana anterior \
+                <div class="dropdown">\
+                  <i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                  <div id="myDropdown" class="dropdown-content">\
+                    <a href="#">Apenas a Semana atual</a>\
+                    <a href="#">Apenas a Semana anterior</a>\
+                    <a href="#">Mais opções de gráfico</a>\
+                  </div>\
+                </div></p>';
+        
         document.getElementById('mychart').setAttribute("src", a);
         document.getElementById('date').innerHTML = b;
       }
       function changeChartTwo() {
-        var a = "img/chart1.png";
-        var b = '<p id="estabelecimento" class="text-center"><strong>Fluxo de pessoas: <strong id="green"> +18%</strong></strong></p><span><strong class="text-center"> Hoje: 256  </strong></span></p><p> <strong class="text-center">Ontem: 188 </strong></p><p><span id="legend"></span> Hoje <span id="legendtwo"></span> Ontem <div class="dropdown"><i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdown" class="dropdown-content"><a href="#">Apenas hoje</a><a href="#">Apenas ontem</a><a href="#">Mais opções de gráfico</a></div></div></p> ';
+        var a = "img/chart1correto.png";
+        var b = '<p id="estabelecimento" class="text-center">\
+                  <strong>Fluxo de pessoas: <strong id="green"> +18%</strong></strong>\
+                </p>\
+                <span><strong class="text-center"> Hoje: 256  </strong></span></p>\
+                <p> <strong class="text-center">Ontem: 188 </strong></p>\
+                <p><span id="legend"></span> Hoje <span id="legendtwo"></span> Ontem \
+                <div class="dropdown">\
+                  <i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                  <div id="myDropdown" class="dropdown-content">\
+                    <a href="#" onclick="chartAtualHoje()">Apenas hoje</a><a href="#">Apenas ontem</a>\
+                    <a href="#">Mais opções de gráfico</a>\
+                  </div>\
+                </div></p>';
+        
         document.getElementById('mychart').setAttribute("src", a);
+        document.getElementById('date').innerHTML = b;
+      }
+
+      function chartAtualHoje() {
+        var a = "img/chart3testhoje.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
+                  <strong>Fluxo de pessoas: </strong>\
+                </p>\
+                <span><strong class="text-center"> Hoje: 256  </strong></span></p>\
+                <p><span id="legend"></span> Hoje  \
+                <div class="dropdown">\
+                  <i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                  <div id="myDropdown" class="dropdown-content">\
+                    <a href="#" onclick="chartAtualOntem()">Apenas ontem</a>\
+                    <a href="#" onclick="changeChartTwo()">Hoje e ontem</a>\
+                    <a href="#">Mais opções de gráfico</a>\
+                  </div>\
+                </div></p>';
+
+        document.getElementById("mychart").setAttribute("src", a);
+        document.getElementById('date').innerHTML = b;
+      }
+
+      function chartAtualOntem() {
+        var a = "img/chart3testontem.png";
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
+                  <strong>Fluxo de pessoas: </strong>\
+                </p>\
+                <span><strong class="text-center"> Ontem: 188  </strong></span></p>\
+                <p><span id="legendtwo"></span> Ontem  \
+                <div class="dropdown">\
+                  <i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                  <div id="myDropdown" class="dropdown-content">\
+                    <a href="#" onclick="chartAtualOntem()">Apenas Hoje</a>\
+                    <a href="#" onclick="changeChartTwo()">Hoje e ontem</a>\
+                    <a href="#">Mais opções de gráfico</a>\
+                  </div>\
+                </div></p>';
+
+        document.getElementById("mychart").setAttribute("src", a);
         document.getElementById('date').innerHTML = b;
       }
 
       function changeChartThree() {
         var a = "img/chart3.png";
-        var b = '<p id="estabelecimento" class="text-center"><strong>Fluxo de pessoas: <strong id="green"> +13%</strong></strong></p><span><strong class="text-center"> Mês atual: 4.328  </strong></span></p><p> <strong class="text-center">Mês anterior: 3.652 </strong></p><p><span id="legend"></span> Mês atual <span id="legendtwo"></span> Mês anterior <div class="dropdown"><i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdown" class="dropdown-content"><a href="#" onclick="chartTreeAtual()">Apenas o mês atual</a><a href="#" onclick="chartTreeAnterior()">Apenas o mês anterior</a><a href="#">Período personalizado</a></div></div></p> ';
+        var b = '<p id="estabelecimento" class="text-center">\
+                  <strong>Fluxo de pessoas: <strong id="green"> +13%</strong></strong>\
+                </p>\
+                <span><strong class="text-center"> Mês atual: 4.328  </strong></span></p>\
+                <p> <strong class="text-center">Mês anterior: 3.652 </strong></p>\
+                <p><span id="legend"></span> Mês atual <span id="legendtwo"></span> Mês anterior \
+                <div class="dropdown">\
+                  <i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                  <div id="myDropdown" class="dropdown-content">\
+                    <a href="#" onclick="chartTreeAtual()">Apenas o mês atual</a>\
+                    <a href="#" onclick="chartTreeAnterior()">Apenas o mês anterior</a>\
+                    <a href="#">Período personalizado</a>\
+                  </div>\
+                </div></p>';
+
         document.getElementById('mychart').setAttribute("src", a);
         document.getElementById('date').innerHTML = b;
       }
 
       function chartTreeAtual() {
         var a = "img/chart3atual.png";
-        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;"><strong>Fluxo de pessoas: </strong></p><span><strong class="text-center"> Mês atual: 4.328  </strong></span></p><p><span id="legend"></span> Mês atual <div class="dropdown"><i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdown" class="dropdown-content"><a href="#" onclick="chartTreeAnterior()">Apenas o mês anterior</a><a href="#" onclick="changeChartThree()">Mês atual e anterior</a><a href="#">Mais opções de gráfico</a></div></div></p> ';
+        var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
+                  <strong>Fluxo de pessoas: </strong>\
+                </p>\
+                <span><strong class="text-center"> Mês atual: 4.328  </strong></span></p>\
+                <p><span id="legend"></span> Mês atual \
+                  <div class="dropdown">\
+                    <i onclick="myFunction()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                    <div id="myDropdown" class="dropdown-content">\
+                      <a href="#" onclick="chartTreeAnterior()">Apenas o mês anterior</a>\
+                      <a href="#" onclick="changeChartThree()">Mês atual e anterior</a>\
+                      <a href="#">Mais opções de gráfico</a>\
+                    </div>\
+                  </div>\
+                </p> ';
         document.getElementById('mychart').setAttribute("src", a);
         document.getElementById('date').innerHTML = b;
       }
