@@ -162,6 +162,18 @@ html, body {
 	font-weight: 900;
 }
 
+.data-two .container-fluid .sec #datesix {
+	margin-top: 10px;
+	font-size: 17px !important;
+	font-weight: 900;
+}
+
+.data-two .container-fluid .sec #dateseven {
+	margin-top: 10px;
+	font-size: 17px !important;
+	font-weight: 900;
+}
+
 .data .container-fluid .row .col-md-4 .sec #datetwo {
 	margin-top: 10px;
 	font-size: 15px;
@@ -179,6 +191,26 @@ html, body {
 .data .container-fluid .row .col-md-4 .sec p span#legend {
 	padding: 8px 12px;
 	background-color: rgba(255, 225, 79,1);
+	border-radius: 0;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
+.data-two .container-fluid .row p span#legendgenhor {
+	padding: 8px 12px;
+	background-color: rgb(27, 164, 255);
+	border-radius: 0;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
+.data-two .container-fluid .row p span#legendgenhortwo {
+	padding: 8px 12px;
+	background-color: rgb(214, 120, 250);
 	border-radius: 0;
 	display: inline-block;
 	margin-left: 8px;
@@ -306,12 +338,11 @@ html, body {
 	background-color: white;
 }
 
-
-
 .data .container-fluid .row .mov span#emotion {
 	background-color: white;
 	padding: 0 10px;
 }
+
 
 .data .container-fluid .row .mov .col-md-6 p {
 	font-size: 15px;
@@ -428,11 +459,45 @@ html, body {
 	margin: 5px auto;
 }
 
+#lastcontainer {
+	margin-bottom: 40px;
+}
+
+/*  footer */
+
+.footer {
+	height: 55px;
+	background-color: rgba(152,152,152,1);
+	color: white;
+	font-size: 15px;
+}
+
+.footer .container-fluid {
+	line-height: 45px;
+	vertical-align: middle;
+}
+
+
+
+/*  responsive design */
+
 @media (max-width: 1200px) {
 	.data .container-fluid .row ul a li {
 		padding: 3px 5px;
 	}
 }
+
+@media (max-width: 1090px) {
+	.data-two .container-fluid .row p#datesix {
+		font-size: 15px !important;
+	}
+} 
+
+@media (max-width: 990px) {
+	.data-two .container-fluid .row p#datesix {
+		font-size: 17px !important;
+	}
+} 
 
 @media (max-width: 485px) {
 	.data-two .container-fluid .row .col-md-6 .row span#dudalina {

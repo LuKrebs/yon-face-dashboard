@@ -24,16 +24,16 @@
           <div class="dropdown-header">
             <button class="dropbtn-header">Relatórios</button>
             <div class="dropdown-content-header">
-              <a href="#">Estatística</a>
-              <a href="#">Relatórios</a>
+              <a href="pages/estatistica.html">Estatística</a>
+              <a href="pages/relatorios.html">Relatórios</a>
             </div>
           </div>
           <div class="dropdown-header">
             <button class="dropbtn-header">Configurações</button>
             <div class="dropdown-content-header">
-              <a href="#">Perfil</a>
-              <a href="#">Administração</a>
-              <a href="#">Manual do Sistema</a>
+              <a href="pages/perfil.html">Perfil</a>
+              <a href="pages/adm.html">Administração</a>
+              <a href="pages/maunal.html">Manual do Sistema</a>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@
     <div class="data">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center" id="idteste">
             <h3>Análise do Fluxo de pessoas</h3> 
             <img id="mychart" src="img/chart1correto.png" class="img-responsive"> 
             <div class="row mov sec">
@@ -54,14 +54,14 @@
             <div class="row mov">
               <div class="col-md-12 text-center">
                 <ul>
-                  <a href="#mychart" onclick="changeChartTwo()"><li>Dia</li></a>
-                  <a href="#mychart" onclick="changeChart()"><li>Semana</li></a>
-                  <a href="#mychart" onclick="changeChartThree()"><li>Mês</li></a>
+                  <a href="#idteste" onclick="changeChartTwo()"><li>Dia</li></a>
+                  <a href="#idteste" onclick="changeChart()"><li>Semana</li></a>
+                  <a href="#idteste" onclick="changeChartThree()"><li>Mês</li></a>
                 </ul>
               </div>
             </div>  
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center" id="idtestetwo">
             <h3 style="margin-left:-20px; ">Análise de Gênero</h3>
             <img id="mypiechart" src="img/piechart1.png" class="img-responsive"> 
             <div class="row mov sec">
@@ -72,14 +72,14 @@
             <div class="row mov">
               <div class="col-md-12 text-center">
                 <ul>
-                  <a href="#mypiechart" onclick="changeChartPieOne()"><li>Dia</li></a>
-                  <a href="#mypiechart" onclick="changeChartPieTwo()"><li>Semana</li></a>
-                  <a href="#mypiechart" onclick="changeChartPieThree()"><li>Mês</li></a>
+                  <a href="#idtestetwo" onclick="changeChartPieOne()"><li>Dia</li></a>
+                  <a href="#idtestetwo" onclick="changeChartPieTwo()"><li>Semana</li></a>
+                  <a href="#idtestetwo" onclick="changeChartPieThree()"><li>Mês</li></a>
                 </ul>
               </div>
             </div> 
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center" id="idtestethree">
             <h3>Análise de Emoções</h3>
             <img id="mybarchart" src="img/barchart1.png" class="img-responsive"> 
             <div class="row mov sec">
@@ -90,9 +90,9 @@
             <div class="row mov">
               <div class="col-md-12 text-center">
                 <ul>
-                  <a href="#mybarchart" onclick="changeChartBarOne()"><li>Dia</li></a>
-                  <a href="#mybarchart" onclick="changeChartBarTwo()"><li>Semana</li></a>
-                  <a href="#mybarchart" onclick="changeChartBarThree()"><li>Mês</li></a>
+                  <a href="#idtestethree" onclick="changeChartBarOne()"><li>Dia</li></a>
+                  <a href="#idtestethree" onclick="changeChartBarTwo()"><li>Semana</li></a>
+                  <a href="#idtestethree" onclick="changeChartBarThree()"><li>Mês</li></a>
                 </ul>
               </div>
             </div> 
@@ -154,20 +154,71 @@
       </div>
     </div> <!--end: data-two -->
 
-    <div class="data-three">
-      <div class="container">
+    <div class="data-two" id="lastcontainer">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 text-center">
-            <h2>Análises avançadas</h2>
-            <img src="img/chartmix.png" class="img-responsive">
+          <div class="col-md-6 text-center">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="text-center" id="third-container">Análise de Gênero por Horário</h3>
+                <img src="img/chartgenerohorariohoje.png" class="img-responsive" id="mygenhorchart">
+              </div>
+            </div>  
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='datesix'><strong>Descubra padrões de gênero em horários específicos</strong></p>
+              </div>
+            </div> 
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a href="#third-container" onclick="changeGenChartHoje()"><li>Dia</li></a>
+                  <a href="#third-container" onclick="changeGenChartSemana()"><li>Semana</li></a>
+                  <a href="#third-container" onclick="changeGenChartMes()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 id="third-third-container">Análise de Idade por Horário</h3>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <img src="img/chartidadehorario.png" class="img-responsive" id="mydemochart">
+                    <img src="img/chartidadehorario.png" class="img-responsive" id="mydemochart">
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <img src="img/chartidadehorario.png" class="img-responsive" id="mydemochart">
+                    <img src="img/chartidadehorario.png" class="img-responsive" id="mydemochart">
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='dateseven'><strong>Descubra padrões de idade em horários específicos</strong></p>
+              </div>
+            </div> 
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a href="#third-third-container" onclick=""><li>Dia</li></a>
+                  <a href="#third-third-container" onclick=""><li>Semana</li></a>
+                  <a href="#third-third-container" onclick=""><li>Mês</li></a>
+                </ul>
+              </div>
+            </div> 
           </div>
         </div>
       </div>
-    </div>
-
+    </div> <!--end: data-two -->
 
     <div class="footer">
-      <div class="container">
+      <div class="container-fluid">
+        <div class="pull-left">
+          <p>YONFACE Tecnologia &copy 2017</p>
+        </div>
       </div>
     </div> <!--end: footer-->
 

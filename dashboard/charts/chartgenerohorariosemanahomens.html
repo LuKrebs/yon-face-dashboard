@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			 WebFontConfig = {
+			 google: 
+			{families: ["Open Sans",]},active: function() { 
+			 DrawTheChart(ChartData,ChartOptions,"chart-01","Line")}
+			};
+		</script>
+		<script asyn src="http://charts.livegap.com/js/webfont.js"></script>
+		<script src="http://charts.livegap.com/js/Chart.min.js"></script>
+		<script>
+			function DrawTheChart(ChartData,ChartOptions,ChartId,ChartType){
+			eval('var myLine = new Chart(document.getElementById(ChartId).getContext("2d")).'+ChartType+'(ChartData,ChartOptions);document.getElementById(ChartId).getContext("2d").stroke();')
+			}
+		</script>
+	</head>
+	<body>
+		<canvas  id="chart-01" width="600" height="300"  style="background-color:rgba(255,255,255,1.00);border-radius:0px;width:700px;height:400px;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px"></canvas>
+		<script> function MoreChartOptions(){} var ChartData = {
+			labels : ["janeiro","fevereiro","março","abril","maio","junho","julho",],
+			datasets : [{fillColor :"rgba(18, 160, 255,0.5)",
+									strokeColor : "rgba(18, 160, 255,1)",
+									pointColor : "rgba(18, 160, 255,1)",
+									markerShape :"circle",
+									pointStrokeColor : "rgba(255,255,255,1)",
+									data : [10,20,30,50,55,75,55,],title:"2013"},
+									{fillColor :"rgba(214, 120, 250,0.5)",
+									strokeColor : "rgba(214, 120, 250,1)",
+									pointColor : "rgba(214, 120, 250,1)",
+									markerShape :"circle",
+									pointStrokeColor : "rgba(255,255,255,1)",
+									data : [0,0,0,0,0,0,0,],title:"2014"},]};
+									ChartOptions= {decimalSeparator:".",thousandSeparator:",",spaceLeft:-5,spaceRight:12,spaceTop:12,spaceBottom:12,
+									scaleLabel:"<%=value+''%>",yAxisMinimumInterval:3,scaleShowLabels:true,scaleShowLine:true,scaleLineStyle:"solid",scaleLineWidth:1,
+									scaleLineColor:"rgba(0, 0, 0, 1)",scaleOverlay :true,scaleOverride :true,scaleSteps:10,scaleStepWidth:10,scaleStartValue:0,legend:false,maxLegendCols:5,legendBlockSize:15,legendFillColor:'rgba(0, 0, 0, 1)',legendColorIndicatorStrokeWidth:1,legendPosX:-2,legendPosY:4,legendXPadding:0,legendYPadding:0,legendBorders:false,legendBordersWidth:1,legendBordersStyle:"solid",legendBordersColors:"rgba(0, 0, 0, 1)",legendBordersSpaceBefore:5,legendBordersSpaceLeft:5,legendBordersSpaceRight:5,legendBordersSpaceAfter:5,legendSpaceBeforeText:5,legendSpaceLeftText:5,legendSpaceRightText:5,legendSpaceAfterText:5,legendSpaceBetweenBoxAndText:5,legendSpaceBetweenTextHorizontal:5,legendSpaceBetweenTextVertical:5,legendFontFamily:"'Open Sans'",legendFontStyle:"normal normal",legendFontColor:"rgba(0, 0, 0, 1)",legendFontSize:15,showYAxisMin:false,rotateLabels:"smart",xAxisBottom:false,yAxisLeft:false,yAxisRight:false,scaleFontFamily:"'Open Sans'",scaleFontStyle:"normal normal",scaleFontColor:"rgba(0, 0, 0, 1)",scaleFontSize:12,pointLabelFontFamily:"'Open Sans'",pointLabelFontStyle:"normal normal",pointLabelFontColor:"rgba(0, 0, 0, 1)",pointLabelFontSize:12,angleShowLineOut:true,angleLineStyle:"solid",angleLineWidth:1,angleLineColor:"rgba(0,0,0,0.1)",percentageInnerCutout:50,scaleShowGridLines:true,scaleGridLineStyle:"solid",scaleGridLineWidth:1,scaleGridLineColor:"rgba(0,0,0,0.14)",scaleXGridLinesStep:0,scaleYGridLinesStep:3,segmentShowStroke:true,segmentStrokeStyle:"solid",segmentStrokeWidth:2,segmentStrokeColor:"rgba(255,255,255,1.00)",datasetStroke:true,datasetFill : true,datasetStrokeStyle:"solid",datasetStrokeWidth:2,bezierCurve:true,bezierCurveTension :0.25,pointDotStrokeStyle:"solid",pointDotStrokeWidth : 1,pointDotRadius : 3,pointDot : false,scaleTickSizeBottom:0,scaleTickSizeTop:0,scaleTickSizeLeft:0,scaleTickSizeRight:0,graphMin:0,graphMax:100,barShowStroke : false,barBorderRadius:0,barStrokeStyle:"solid",barStrokeWidth:1,barValueSpacing:15,barDatasetSpacing:0,scaleShowLabelBackdrop :true,scaleBackdropColor:'rgba(0, 0, 0,1)',scaleBackdropPaddingX :2,scaleBackdropPaddingY :2,animation : true,onAnimationComplete : function(){MoreChartOptions()}};
+			 DrawTheChart(ChartData,ChartOptions,"chart-01","Line");
+		 </script>
+ </body>
+ </html>
+
