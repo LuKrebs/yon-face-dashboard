@@ -218,6 +218,48 @@ html, body {
 	margin-bottom: -3px;
 }
 
+#lastcontainer .container-fluid .row p span#legendcriancas {
+	padding: 8px 12px;
+	background-color: rgba(155, 89, 182,1);
+	border-radius: 0;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
+#lastcontainer .container-fluid .row p span#legendjovens {
+	padding: 8px 12px;
+	background-color: rgba(241, 196, 15,1);
+	border-radius: 0;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
+#lastcontainer .container-fluid .row p span#legendadultos {
+	padding: 8px 12px;
+	background-color: rgba(189, 195, 199,1);
+	border-radius: 0;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
+#lastcontainer .container-fluid .row p span#legendidosos {
+	padding: 8px 12px;
+	background-color: rgba(203, 184, 214, 1);
+	border-radius: 0;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
+
+
 .data .container-fluid .row .col-md-4 .sec span {
 	padding: 5px 10px;
 	border-radius: 5px;
@@ -340,7 +382,7 @@ html, body {
 
 .data .container-fluid .row .mov span#emotion {
 	background-color: white;
-	padding: 0 10px;
+	padding: 0 7px;
 }
 
 
@@ -450,6 +492,7 @@ html, body {
 	margin-right: 25px;
 	border: 1px solid transparent;
 	font-weight: 900;
+	cursor: pointer;
 }
 
 .data-two .container-fluid .row .col-md-6 .mov {
