@@ -17,6 +17,19 @@
         
         document.getElementById('mychart').setAttribute("src", a);
         document.getElementById('date').innerHTML = b;
+        document.getElementById('buttonactivedone').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedone').style.color = "white";
+        document.getElementById('buttonactivedone').style.border = "2px solid white";
+        
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedtwo').style.background = "white";
+        document.getElementById('buttonactivedtwo').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwo').style.border = "2px solid white";
+        
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedthree').style.background = "white";
+        document.getElementById('buttonactivedthree').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedthree').style.border = "2px solid white";
       }
 
       function changeChartSemanaAtual() {
@@ -75,6 +88,18 @@
         
         document.getElementById('mychart').setAttribute("src", a);
         document.getElementById('date').innerHTML = b;
+        document.getElementById('buttonactivedtwo').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwo').style.color = "white";
+        document.getElementById('buttonactivedtwo').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedone').style.background = "white";
+        document.getElementById('buttonactivedone').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedone').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedthree').style.background = "white";
+        document.getElementById('buttonactivedthree').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedthree').style.border = "2px solid white";
       }
 
       function chartAtualHoje() {
@@ -133,6 +158,18 @@
 
         document.getElementById('mychart').setAttribute("src", a);
         document.getElementById('date').innerHTML = b;
+        document.getElementById('buttonactivedthree').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedthree').style.color = "white";
+        document.getElementById('buttonactivedthree').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedone').style.background = "white";
+        document.getElementById('buttonactivedone').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedone').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedtwo').style.background = "white";
+        document.getElementById('buttonactivedtwo').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwo').style.border = "2px solid white";
       }
 
       function chartTreeAtual() {
@@ -187,6 +224,19 @@
                   </div>';
         document.getElementById('mypiechart').setAttribute("src", a);
         document.getElementById('datetwo').innerHTML = b;
+
+        document.getElementById('buttonactivedfour').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfour').style.color = "white";
+        document.getElementById('buttonactivedfour').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedfive').style.background = "white";
+        document.getElementById('buttonactivedfive').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfive').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedsix').style.background = "white";
+        document.getElementById('buttonactivedsix').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedsix').style.border = "2px solid white";
       }
 
       function changeChartPieTwo() {
@@ -205,6 +255,19 @@
                 </div>';
         document.getElementById('mypiechart').setAttribute("src", a);
         document.getElementById('datetwo').innerHTML = b;
+
+        document.getElementById('buttonactivedfive').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfive').style.color = "white";
+        document.getElementById('buttonactivedfive').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedfour').style.background = "white";
+        document.getElementById('buttonactivedfour').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfour').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedsix').style.background = "white";
+        document.getElementById('buttonactivedsix').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedsix').style.border = "2px solid white";
       }
       
       function changeChartPieThree() {
@@ -223,6 +286,19 @@
                 </div>';
         document.getElementById('mypiechart').setAttribute("src", a);
         document.getElementById('datetwo').innerHTML = b;
+
+        document.getElementById('buttonactivedsix').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedsix').style.color = "white";
+        document.getElementById('buttonactivedsix').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedfour').style.background = "white";
+        document.getElementById('buttonactivedfour').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfour').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedfive').style.background = "white";
+        document.getElementById('buttonactivedfive').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfive').style.border = "2px solid white";
       }
 
       function changeChartBarOne() {
@@ -270,6 +346,19 @@
 
         document.getElementById('mybarchart').setAttribute("src", a);
         document.getElementById('datethree').innerHTML = b;
+
+        document.getElementById('buttonactivedseven').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedseven').style.color = "white";
+        document.getElementById('buttonactivedseven').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedeight').style.background = "white";
+        document.getElementById('buttonactivedeight').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedeight').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivednine').style.background = "white";
+        document.getElementById('buttonactivednine').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivednine').style.border = "2px solid white";
       }
 
       function changeChartBarTwo() {
@@ -317,6 +406,19 @@
 
         document.getElementById('mybarchart').setAttribute("src", a);
         document.getElementById('datethree').innerHTML = b;
+
+        document.getElementById('buttonactivedeight').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedeight').style.color = "white";
+        document.getElementById('buttonactivedeight').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedseven').style.background = "white";
+        document.getElementById('buttonactivedseven').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedseven').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivednine').style.background = "white";
+        document.getElementById('buttonactivednine').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivednine').style.border = "2px solid white";
       }
 
       function changeChartBarThree() {
@@ -364,6 +466,19 @@
 
         document.getElementById('mybarchart').setAttribute("src", a);
         document.getElementById('datethree').innerHTML = b;
+
+        document.getElementById('buttonactivednine').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivednine').style.color = "white";
+        document.getElementById('buttonactivednine').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedseven').style.background = "white";
+        document.getElementById('buttonactivedseven').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedseven').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedeight').style.background = "white";
+        document.getElementById('buttonactivedeight').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedeight').style.border = "2px solid white";
       }
 
       function changeChartAttOne() {
@@ -391,6 +506,19 @@
 
         document.getElementById('datefour').innerHTML = b;
         document.getElementById('myattchart').setAttribute("src", a);
+
+        document.getElementById('buttonactivedten').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedten').style.color = "white";
+        document.getElementById('buttonactivedten').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedeleven').style.background = "white";
+        document.getElementById('buttonactivedeleven').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedeleven').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedtwelve').style.background = "white";
+        document.getElementById('buttonactivedtwelve').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwelve').style.border = "2px solid white";
       }
 
       function changeChartAttTwo() { 
@@ -412,11 +540,24 @@
                   <i onclick="myFunctionFour()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                   <div id="myDropdownFour" class="dropdown-content">\
                     <a href="pages/estatistica.html">Comparar atratividade entre produtos</a>\
-                    <a href="#" onclick="changeProduct()">Alterar produto em análise</a>\
+                    <a style="cursor:pointer;" onclick="changeProduct()">Alterar produto em análise</a>\
                   </div>\
                 </div>';
         document.getElementById('datefour').innerHTML = b;
         document.getElementById('myattchart').setAttribute("src", a);
+
+        document.getElementById('buttonactivedeleven').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedeleven').style.color = "white";
+        document.getElementById('buttonactivedeleven').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedten').style.background = "white";
+        document.getElementById('buttonactivedten').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedten').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedtwelve').style.background = "white";
+        document.getElementById('buttonactivedtwelve').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwelve').style.border = "2px solid white";
       }
 
       function changeChartAttThree() { 
@@ -438,11 +579,24 @@
                   <i onclick="myFunctionFour()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                   <div id="myDropdownFour" class="dropdown-content">\
                     <a href="pages/estatistica.html">Comparar atratividade entre produtos</a>\
-                    <a href="#" onclick="changeProduct()">Alterar produto em análise</a>\
+                    <a style="cursor:pointer;" onclick="changeProduct()">Alterar produto em análise</a>\
                   </div>\
                 </div>';
         document.getElementById('datefour').innerHTML = b;
         document.getElementById('myattchart').setAttribute("src", a);
+
+        document.getElementById('buttonactivedtwelve').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwelve').style.color = "white";
+        document.getElementById('buttonactivedtwelve').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedten').style.background = "white";
+        document.getElementById('buttonactivedten').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedten').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedeleven').style.background = "white";
+        document.getElementById('buttonactivedeleven').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedeleven').style.border = "2px solid white";
       }
 
       function changeProduct() {
@@ -464,7 +618,7 @@
                   <i onclick="myFunctionFour()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                   <div id="myDropdownFour" class="dropdown-content">\
                     <a href="pages/estatistica.html">Comparar atratividade entre produtos</a>\
-                    <a href="#" onclick="changeProduct()">Alterar produto em análise</a>\
+                    <a style="cursor:pointer;" onclick="changeProduct()">Alterar produto em análise</a>\
                   </div>\
                 </div>';
 
@@ -495,7 +649,20 @@
                   </div>';
 
         document.getElementById('datefive').innerHTML = b;  
-        document.getElementById('mydemochart').setAttribute("src", a);      
+        document.getElementById('mydemochart').setAttribute("src", a);
+
+        document.getElementById('buttonactivedthirteen').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedthirteen').style.color = "white";
+        document.getElementById('buttonactivedthirteen').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedfourteen').style.background = "white";
+        document.getElementById('buttonactivedfourteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfourteen').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedfifteen').style.background = "white";
+        document.getElementById('buttonactivedfifteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfifteen').style.border = "2px solid white";      
       }
 
       function changeChartDemoTwo() {
@@ -522,6 +689,19 @@
 
         document.getElementById('datefive').innerHTML = b;
         document.getElementById('mydemochart').setAttribute("src", a);
+
+        document.getElementById('buttonactivedfourteen').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfourteen').style.color = "white";
+        document.getElementById('buttonactivedfourteen').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedthirteen').style.background = "white";
+        document.getElementById('buttonactivedthirteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedthirteen').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedfifteen').style.background = "white";
+        document.getElementById('buttonactivedfifteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfifteen').style.border = "2px solid white";
       }
 
       function changeChartDemoThree() {
@@ -547,6 +727,19 @@
                   </div>';
         document.getElementById('datefive').innerHTML = b;
         document.getElementById('mydemochart').setAttribute("src", a);
+
+        document.getElementById('buttonactivedfifteen').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfifteen').style.color = "white";
+        document.getElementById('buttonactivedfifteen').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedthirteen').style.background = "white";
+        document.getElementById('buttonactivedthirteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedthirteen').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedfourteen').style.background = "white";
+        document.getElementById('buttonactivedfourteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedfourteen').style.border = "2px solid white";
       }
 
       function changeGenChartHoje() {
@@ -576,6 +769,19 @@
 
         document.getElementById('datesix').innerHTML = b;
         document.getElementById('mygenhorchart').setAttribute("src", a);
+
+        document.getElementById('buttonactivedsixteen').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedsixteen').style.color = "white";
+        document.getElementById('buttonactivedsixteen').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedseventeen').style.background = "white";
+        document.getElementById('buttonactivedseventeen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedseventeen').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedeighteen').style.background = "white";
+        document.getElementById('buttonactivedeighteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedeighteen').style.border = "2px solid white";
       }
 
       function changeGenChartHojeMulheres() {
@@ -653,6 +859,19 @@
 
         document.getElementById('datesix').innerHTML = b;
         document.getElementById('mygenhorchart').setAttribute("src", a);
+
+        document.getElementById('buttonactivedseventeen').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedseventeen').style.color = "white";
+        document.getElementById('buttonactivedseventeen').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedsixteen').style.background = "white";
+        document.getElementById('buttonactivedsixteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedsixteen').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedeighteen').style.background = "white";
+        document.getElementById('buttonactivedeighteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedeighteen').style.border = "2px solid white";
       }
 
       function changeGenChartSemanaMulheres() {
@@ -732,6 +951,19 @@
 
         document.getElementById('datesix').innerHTML = b;
         document.getElementById('mygenhorchart').setAttribute("src", a);
+
+        document.getElementById('buttonactivedeighteen').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedeighteen').style.color = "white";
+        document.getElementById('buttonactivedeighteen').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedsixteen').style.background = "white";
+        document.getElementById('buttonactivedsixteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedsixteen').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedseventeen').style.background = "white";
+        document.getElementById('buttonactivedseventeen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedseventeen').style.border = "2px solid white";
       }
 
       function changeGenChartMesMulheres() {
@@ -826,6 +1058,19 @@
         document.getElementById("mydemochartthree").setAttribute("src", c);
         document.getElementById("mydemochartfour").setAttribute("src", d);
         document.getElementById("dateseven").innerHTML = e;
+
+        document.getElementById('buttonactivednineteen').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivednineteen').style.color = "white";
+        document.getElementById('buttonactivednineteen').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivedtwenty').style.background = "white";
+        document.getElementById('buttonactivedtwenty').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwenty').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedtwentyone').style.background = "white";
+        document.getElementById('buttonactivedtwentyone').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwentyone').style.border = "2px solid white";
       }
 
       function changeAgeChartSemana() {
@@ -872,6 +1117,19 @@
         document.getElementById("mydemochartthree").setAttribute("src", c);
         document.getElementById("mydemochartfour").setAttribute("src", d);
         document.getElementById("dateseven").innerHTML = e;
+
+        document.getElementById('buttonactivedtwenty').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwenty').style.color = "white";
+        document.getElementById('buttonactivedtwenty').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivednineteen').style.background = "white";
+        document.getElementById('buttonactivednineteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivednineteen').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedtwentyone').style.background = "white";
+        document.getElementById('buttonactivedtwentyone').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwentyone').style.border = "2px solid white";
       }
 
       function changeAgeChartMes() {
@@ -918,6 +1176,19 @@
         document.getElementById("mydemochartthree").setAttribute("src", c);
         document.getElementById("mydemochartfour").setAttribute("src", d);
         document.getElementById("dateseven").innerHTML = e;
+        
+        document.getElementById('buttonactivedtwentyone').style.background = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwentyone').style.color = "white";
+        document.getElementById('buttonactivedtwentyone').style.border = "2px solid white";
+
+        /* return the 'dia' button for the normal */
+        document.getElementById('buttonactivednineteen').style.background = "white";
+        document.getElementById('buttonactivednineteen').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivednineteen').style.border = "2px solid white";
+        /*  return the  'mês' for the normal*/
+        document.getElementById('buttonactivedtwenty').style.background = "white";
+        document.getElementById('buttonactivedtwenty').style.color = "rgb(41,26,76)";
+        document.getElementById('buttonactivedtwenty').style.border = "2px solid white";
       }
 
 
