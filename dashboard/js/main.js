@@ -11,7 +11,7 @@
                   <div id="myDropdown" class="dropdown-content">\
                     <a style="cursor:pointer;" onclick="changeChartSemanaAtual()">Apenas a Semana atual</a>\
                     <a style="cursor:pointer;" onclick="changeChartSemanaAnterior()">Apenas a Semana anterior</a>\
-                    <a style="cursor:pointer;">Mais opções de gráfico</a>\
+                    <a href="pages/estatistica.html">Período personalizado</a>\
                   </div>\
                 </div></p>';
         
@@ -30,7 +30,7 @@
                   <div id="myDropdown" class="dropdown-content">\
                     <a style="cursor:pointer;" onclick="changeChartSemanaAnterior()">Apenas Semana anterior</a>\
                     <a style="cursor:pointer;" onclick="changeChart()">Semana atual e anterior</a>\
-                    <a style="cursor:pointer;">Mais opções de gráfico</a>\
+                    <a href="pages/estatistica.html">Período personalizado</a>\
                   </div>\
                 </div>';
 
@@ -49,7 +49,7 @@
                   <div id="myDropdown" class="dropdown-content">\
                     <a style="cursor:pointer;" onclick="changeChartSemanaAtual()">Apenas Semana atual</a>\
                     <a style="cursor:pointer;" onclick="changeChart()">Semana atual e anterior</a>\
-                    <a style="cursor:pointer;">Mais opções de gráfico</a>\
+                    <a href="pages/estatistica.html">Período personalizado</a>\
                   </div>\
                 </div>';
 
@@ -69,7 +69,7 @@
                   <div id="myDropdown" class="dropdown-content">\
                     <a style="cursor:pointer;" onclick="chartAtualHoje()">Apenas hoje</a>\
                     <a style="cursor:pointer;" onclick="chartAtualOntem()">Apenas ontem</a>\
-                    <a style="cursor:pointer;">Mais opções de gráfico</a>\
+                   <a href="pages/estatistica.html">Período personalizado</a>\
                   </div>\
                 </div>';
         
@@ -88,7 +88,7 @@
                   <div id="myDropdown" class="dropdown-content">\
                     <a style="cursor:pointer;" onclick="chartAtualOntem()">Apenas ontem</a>\
                     <a style="cursor:pointer;" onclick="changeChartTwo()">Hoje e ontem</a>\
-                    <a style="cursor:pointer;">Mais opções de gráfico</a>\
+                    <a href="pages/estatistica.html">Período personalizado</a>\
                   </div>\
                 </div>';
 
@@ -107,7 +107,7 @@
                   <div id="myDropdown" class="dropdown-content">\
                     <a style="cursor:pointer;" onclick="chartAtualHoje()">Apenas Hoje</a>\
                     <a style="cursor:pointer;" onclick="changeChartTwo()">Hoje e ontem</a>\
-                    <a style="cursor:pointer;">Mais opções de gráfico</a>\
+                    <a href="pages/estatistica.html">Período personalizado</a>\
                   </div>\
                 </div>';
 
@@ -127,7 +127,7 @@
                   <div id="myDropdown" class="dropdown-content">\
                     <a style="cursor:pointer;" onclick="chartTreeAtual()">Apenas o mês atual</a>\
                     <a style="cursor:pointer;" onclick="chartTreeAnterior()">Apenas o mês anterior</a>\
-                    <a style="cursor:pointer;">Período personalizado</a>\
+                    <a href="pages/estatistica.html">Período personalizado</a>\
                   </div>\
                 </div>';
 
@@ -146,7 +146,7 @@
                   <div id="myDropdown" class="dropdown-content">\
                     <a style="cursor:pointer;" onclick="chartTreeAnterior()">Apenas o mês anterior</a>\
                     <a style="cursor:pointer;" onclick="changeChartThree()">Mês atual e anterior</a>\
-                    <a style="cursor:pointer;">Mais opções de gráfico</a>\
+                    <a href="pages/estatistica.html">Período personalizado</a>\
                   </div>\
                 </div>';
         document.getElementById('mychart').setAttribute("src", a);
@@ -164,7 +164,7 @@
                   <div id="myDropdown" class="dropdown-content">\
                     <a style="cursor:pointer;" onclick="chartTreeAtual()">Apenas o mês atual</a>\
                     <a style="cursor:pointer;" onclick="changeChartThree()">Mês atual e anterior</a>\
-                    <a style="cursor:pointer;">Mais opções de gráfico</a>\
+                    <a href="pages/estatistica.html">Período personalizado</a>\
                   </div>\
                 </div>';
         document.getElementById('mychart').setAttribute("src", a);
@@ -181,8 +181,8 @@
                 <div class="dropdown">\
                   <i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownTwo" class="dropdown-content">\
-                      <a style="cursor:pointer;">Comparar períodos</a>\
-                      <a style="cursor:pointer;">Comparar gêneros com outros dados</a>\
+                      <a href="pages/estatistica.html">Comparar períodos</a>\
+                      <a href="pages/estatistica.html">Comparar gêneros com outros dados</a>\
                     </div>\
                   </div>';
         document.getElementById('mypiechart').setAttribute("src", a);
@@ -199,8 +199,8 @@
                 <div class="dropdown">\
                   <i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                   <div id="myDropdownTwo" class="dropdown-content">\
-                    <a style="cursor:pointer;">Comparar períodos</a>\
-                    <a style="cursor:pointer;">Comparar gêneros com outros dados</a>\
+                    <a href="pages/estatistica.html">Comparar períodos</a>\
+                    <a href="pages/estatistica.html">Comparar gêneros com outros dados</a>\
                   </div>\
                 </div>';
         document.getElementById('mypiechart').setAttribute("src", a);
@@ -217,8 +217,8 @@
                 <div class="dropdown">\
                   <i onclick="myFunctionTwo()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                   <div id="myDropdownTwo" class="dropdown-content">\
-                    <a href="#">Comparar períodos</a>\
-                    <a href="#">Comparar gêneros com outros dados</a>\
+                    <a href="pages/estatistica.html">Comparar períodos</a>\
+                    <a href="pages/estatistica.html">Comparar gêneros com outros dados</a>\
                   </div>\
                 </div>';
         document.getElementById('mypiechart').setAttribute("src", a);
@@ -263,8 +263,8 @@
               <div class="dropdown">\
                 <i onclick="myFunctionThree()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                 <div id="myDropdownThree" class="dropdown-content">\
-                  <a href="#">Comparar períodos</a>\
-                  <a href="#">Comparar gêneros com outros dados</a>\
+                  <a href="pages/estatistica.html">Comparar períodos</a>\
+                  <a href="pages/estatistica.html">Comparar Emoções com outros dados</a>\
                 </div>\
               </div>';
 
@@ -275,17 +275,45 @@
       function changeChartBarTwo() {
         var a = "img/barchart2.png";
         var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
-          <strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual</strong> </strong></p>\
-          <div class="row"><div class="col-md-6 col-xs-6 text-center"><div class="row">\
-          <div class="col-md-5 col-xs-6 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div>\
-          <div class="col-md-5 col-xs-6 text-center"><p><span id="emotion">44%</span id="emotion"></p><p><span id="emotion">62%</span id="emotion"></p>\
-          <p><span id="emotion">4%</span id="emotion"></p></div></div></div>\
-          <div class="col-md-6 col-xs-6 text-center"><div class="row">\
-          <div class="col-md-5 col-xs-6 text-center"><p>Raiva </p><p>Desgosto</p><p>Tristeza</p></div>\
-          <div class="col-md-5 col-xs-6 text-center"><p><span id="emotion">15%</span id="emotion"></p><p><span id="emotion">9%</span id="emotion"></p>\
-          <p><span id="emotion">13%</span id="emotion"></p></div></div></div></div>\
-          <div class="dropdown"><i onclick="myFunctionThree()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownThree" class="dropdown-content">\
-          <a href="#">Comparar períodos</a><a href="#">Comparar gêneros com outros dados</a></div></div></p> ';
+                  <strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual</strong> </strong>\
+                </p>\
+                <div class="row">\
+                  <div class="col-md-6 col-xs-6 text-center">\
+                    <div class="row">\
+                      <div class="col-md-5 col-xs-6 text-center">\
+                        <p>Alegria </p>\
+                        <p>Surpresa</p>\
+                        <p>Medo</p>\
+                      </div>\
+                      <div class="col-md-5 col-xs-6 text-center">\
+                        <p><span id="emotion">44%</span id="emotion"></p>\
+                        <p><span id="emotion">62%</span id="emotion"></p>\
+                        <p><span id="emotion">4%</span id="emotion"></p>\
+                      </div>\
+                    </div>\
+                  </div>\
+                  <div class="col-md-6 col-xs-6 text-center">\
+                    <div class="row">\
+                      <div class="col-md-5 col-xs-6 text-center">\
+                        <p>Raiva </p>\
+                        <p>Desgosto</p>\
+                        <p>Tristeza</p>\
+                      </div>\
+                      <div class="col-md-5 col-xs-6 text-center">\
+                        <p><span id="emotion">15%</span id="emotion"></p>\
+                        <p><span id="emotion">9%</span id="emotion"></p>\
+                        <p><span id="emotion">13%</span id="emotion"></p>\
+                      </div>\
+                    </div>\
+                  </div>\
+                </div>\
+              <div class="dropdown">\
+                <i onclick="myFunctionThree()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                <div id="myDropdownThree" class="dropdown-content">\
+                  <a href="pages/estatistica.html">Comparar períodos</a>\
+                  <a href="pages/estatistica.html">Comparar Emoções com outros dados</a>\
+                </div>\
+              </div>';
 
         document.getElementById('mybarchart').setAttribute("src", a);
         document.getElementById('datethree').innerHTML = b;
@@ -294,17 +322,45 @@
       function changeChartBarThree() {
         var a = "img/barchart3.png";
         var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
-          <strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong> </strong></p>\
-          <div class="row"><div class="col-md-6 col-xs-6 text-center"><div class="row">\
-          <div class="col-md-5 col-xs-6 text-center"><p>Alegria </p><p>Surpresa</p><p>Medo</p></div>\
-          <div class="col-md-5 col-xs-6 text-center"><p><span id="emotion">71%</span id="emotion"></p><p><span id="emotion">19%</span id="emotion"></p>\
-          <p><span id="emotion">3%</span id="emotion"></p></div></div></div>\
-          <div class="col-md-6 col-xs-6 text-center"><div class="row">\
-          <div class="col-md-5 col-xs-6 text-center"><p>Raiva </p><p>Desgosto</p><p>Tristeza</p></div>\
-          <div class="col-md-5 col-xs-6 text-center"><p><span id="emotion">9%</span id="emotion"></p><p><span id="emotion">17%</span id="emotion"></p>\
-          <p><span id="emotion">5%</span id="emotion"></p></div></div></div></div>\
-          <div class="dropdown"><i onclick="myFunctionThree()" class="dropbtn fa fa-cog" aria-hidden="true"></i><div id="myDropdownThree" class="dropdown-content">\
-          <a href="#">Comparar períodos</a><a href="#">Comparar gêneros com outros dados</a></div></div></p> ';
+                  <strong>Detalhes sobre Emoções: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong> </strong>\
+                </p>\
+                <div class="row">\
+                  <div class="col-md-6 col-xs-6 text-center">\
+                    <div class="row">\
+                      <div class="col-md-5 col-xs-6 text-center">\
+                        <p>Alegria </p>\
+                        <p>Surpresa</p>\
+                        <p>Medo</p>\
+                      </div>\
+                      <div class="col-md-5 col-xs-6 text-center">\
+                        <p><span id="emotion">71%</span id="emotion"></p>\
+                        <p><span id="emotion">19%</span id="emotion"></p>\
+                        <p><span id="emotion">3%</span id="emotion"></p>\
+                      </div>\
+                    </div>\
+                  </div>\
+                  <div class="col-md-6 col-xs-6 text-center">\
+                    <div class="row">\
+                      <div class="col-md-5 col-xs-6 text-center">\
+                        <p>Raiva </p>\
+                        <p>Desgosto</p>\
+                        <p>Tristeza</p>\
+                      </div>\
+                      <div class="col-md-5 col-xs-6 text-center">\
+                        <p><span id="emotion">9%</span id="emotion"></p>\
+                        <p><span id="emotion">17%</span id="emotion"></p>\
+                        <p><span id="emotion">5%</span id="emotion"></p>\
+                      </div>\
+                    </div>\
+                  </div>\
+                </div>\
+              <div class="dropdown">\
+                <i onclick="myFunctionThree()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                <div id="myDropdownThree" class="dropdown-content">\
+                  <a href="pages/estatistica.html">Comparar períodos</a>\
+                  <a href="pages/estatistica.html">Comparar Emoções com outros dados</a>\
+                </div>\
+              </div>';
 
         document.getElementById('mybarchart').setAttribute("src", a);
         document.getElementById('datethree').innerHTML = b;
@@ -313,10 +369,11 @@
       function changeChartAttOne() {
         var a = "img/barchartatratividade1.png";
         var b = '<div class="row">\
-                  <div class="col-md-12 col-xs-12">\
+                  <div class="col-md-12 col-sm-12">\
                     <div class="row">\
-                      <div class="col-md-12 col-xs-12 text-center">\
-                        <p>Trafegaram em frente ao produto <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong>: <span>256 pessoas</span></p>\
+                      <div class="col-md-12 col-sm-12 text-center">\
+                        <p>Trafegaram em frente ao produto <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong>: </p>\
+                        <p style="margin-top:-3px !important;"><span id="pessoas">256 pessoas</span></p>\
                         <p><span>197 pessoas atraídas</span><span id="atraidos"> 77%</span></p>\
                         <p><span> 59 pessoas indiferentes</span><span id="natraidos"> 23%</span></p>\
                         <p>Nível de atratividade: <span id="nivel">Alto</span></p>\
@@ -327,7 +384,7 @@
                 <div class="dropdown">\
                   <i onclick="myFunctionFour()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                   <div id="myDropdownFour" class="dropdown-content">\
-                    <a style="cursor:pointer;"> Comparar atratividade entre produtos</a>\
+                    <a href="estatistica.html"> Comparar atratividade entre produtos</a>\
                     <a style="cursor:pointer;" onclick="changeProduct()">Alterar produto em análise</a>\
                   </div>\
                 </div>';
@@ -339,10 +396,11 @@
       function changeChartAttTwo() { 
         var a = "img/barchartatratividade2.png";
         var b = '<div class="row">\
-                  <div class="col-md-12">\
+                  <div class="col-md-12 col-sm-12">\
                     <div class="row">\
-                      <div class="col-md-12 text-center">\
-                        <p>Trafegaram em frente ao produto <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> nessa semana </strong>: <span> 1.326 pessoas</span></p>\
+                      <div class="col-md-12 col-sm-12 text-center">\
+                        <p>Trafegaram em frente ao produto <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> nessa semana </strong>:</p>\
+                        <p style="margin-top:-3px !important;"><span id="pessoas"> 1.326 pessoas</span></p>\
                         <p><span>835 pessoas atraídas</span><span id="atraidos"> 63%</span></p>\
                         <p><span>491 pessoas indiferentes</span><span id="natraidos"> 37%</span></p>\
                         <p>Nível de atratividade: <span id="nivel">Alto</span></p>\
@@ -353,7 +411,7 @@
                 <div class="dropdown">\
                   <i onclick="myFunctionFour()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                   <div id="myDropdownFour" class="dropdown-content">\
-                    <a href="#">Comparar atratividade entre produtos</a>\
+                    <a href="pages/estatistica.html">Comparar atratividade entre produtos</a>\
                     <a href="#" onclick="changeProduct()">Alterar produto em análise</a>\
                   </div>\
                 </div>';
@@ -367,7 +425,8 @@
                   <div class="col-md-12">\
                     <div class="row">\
                       <div class="col-md-12 text-center">\
-                        <p>Trafegaram em frente ao produto <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> nesse mês</strong>: <span>4.328 pessoas</span></p>\
+                        <p>Trafegaram em frente ao produto <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> nesse mês</strong>:</p>\
+                        <p style="margin-top:-3px !important;"><span id="pessoas">4.328 pessoas</span></p>\
                         <p><span>1.558 pessoas atraídas</span><span id="atraidos"> 39%</span></p>\
                         <p><span>2.770 pessoas indiferentes</span><span id="natraidos"> 61%</span></p>\
                         <p>Nível de atratividade: <span id="nivel">Baixo</span></p>\
@@ -378,7 +437,7 @@
                 <div class="dropdown">\
                   <i onclick="myFunctionFour()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                   <div id="myDropdownFour" class="dropdown-content">\
-                    <a href="#">Comparar atratividade entre produtos</a>\
+                    <a href="pages/estatistica.html">Comparar atratividade entre produtos</a>\
                     <a href="#" onclick="changeProduct()">Alterar produto em análise</a>\
                   </div>\
                 </div>';
@@ -404,7 +463,7 @@
                 <div class="dropdown">\
                   <i onclick="myFunctionFour()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                   <div id="myDropdownFour" class="dropdown-content">\
-                    <a href="#">Comparar atratividade entre produtos</a>\
+                    <a href="pages/estatistica.html">Comparar atratividade entre produtos</a>\
                     <a href="#" onclick="changeProduct()">Alterar produto em análise</a>\
                   </div>\
                 </div>';
@@ -416,38 +475,22 @@
       function changeChartDemoOne() {
         var a = "img/barchartdemografia1.png"
         var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
-                  <strong>Detalhes sobre Demografia: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> hoje</strong> </strong></p>\
+                  <strong>Detalhes sobre Demografia: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual</strong> </strong></p>\
                   <div class="row">\
-                    <div class="col-md-6 col-xs-6 text-center">\
-                      <div class="row">\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p>Criança </p>\
-                          <p>Jovem</p>\
-                        </div>\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p><span id="emotion">3%</span></p>\
-                          <p><span id="emotion">37%</span></p>\
-                        </div>\
-                      </div>\
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
+                      <p><span id="legendcriancas"></span> Criança <span id="emotion" style="margin-left:7px !important;">3%</span></p>\
+                      <p><span id="legendjovens"></span> Jovem <span id="emotion" style="margin-left:7px !important;">37%</span></p>\
                     </div>\
-                    <div class="col-md-6 col-xs-6 text-center">\
-                      <div class="row">\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p>Adulto </p>\
-                          <p>Idoso</p>\
-                        </div>\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p><span id="emotion">51%</span></p>\
-                          <p><span id="emotion">9%</span></p>\
-                        </div>\
-                      </div>\
+                    <div class="col-md-6 col-sm-6 col-xs-6">\
+                      <p><span id="legendadultos"></span> Adulto <span id="emotion" style="margin-left:7px !important;">51%</span></p>\
+                      <p><span id="legendidosos"></span> Idoso <span id="emotion" style="margin-left:7px !important;">9%</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionFive()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownFive" class="dropdown-content">\
-                      <a href="#">Comparar períodos</a>\
-                      <a href="#">Comparar demografia com outros dados</a>\
+                      <a href="pages/estatistica.html">Comparar períodos</a>\
+                      <a href="pages/estatistica.html">Comparar demografia com outros dados</a>\
                     </div>\
                   </div>';
 
@@ -460,79 +503,46 @@
         var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
                   <strong>Detalhes sobre Demografia: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual</strong> </strong></p>\
                   <div class="row">\
-                    <div class="col-md-6 col-xs-6 text-center">\
-                      <div class="row">\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p>Criança </p>\
-                          <p>Jovem</p>\
-                        </div>\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p><span id="emotion">12%</span></p>\
-                          <p><span id="emotion">48%</span></p>\
-                        </div>\
-                      </div>\
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
+                      <p><span id="legendcriancas"></span> Criança <span id="emotion" style="margin-left:7px !important;">12%</span></p>\
+                      <p><span id="legendjovens"></span> Jovem <span id="emotion" style="margin-left:7px !important;">48%</span></p>\
                     </div>\
-                    <div class="col-md-6 col-xs-6 text-center">\
-                      <div class="row">\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p>Adulto </p>\
-                          <p>Idoso</p>\
-                        </div>\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p><span id="emotion">31%</span></p>\
-                          <p><span id="emotion">12%</span></p>\
-                        </div>\
-                      </div>\
+                    <div class="col-md-6 col-sm-6 col-xs-6">\
+                      <p><span id="legendadultos"></span> Adulto <span id="emotion" style="margin-left:7px !important;">31%</span></p>\
+                      <p><span id="legendidosos"></span> Idoso <span id="emotion" style="margin-left:7px !important;">12%</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionFive()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownFive" class="dropdown-content">\
-                      <a href="#">Comparar períodos</a>\
-                      <a href="#">Comparar demografia com outros dados</a>\
+                      <a href="pages/estatistica.html">Comparar períodos</a>\
+                      <a href="pages/estatistica.html">Comparar demografia com outros dados</a>\
                     </div>\
                   </div>';
 
         document.getElementById('datefive').innerHTML = b;
         document.getElementById('mydemochart').setAttribute("src", a);
-
       }
 
       function changeChartDemoThree() {
         var a = "img/barchartdemografia3.png";
         var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
-                  <strong>Detalhes sobre Demografia: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong> </strong></p>\
+                  <strong>Detalhes sobre Demografia: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual</strong> </strong></p>\
                   <div class="row">\
-                    <div class="col-md-6 col-xs-6 text-center">\
-                      <div class="row">\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p>Criança </p>\
-                          <p>Jovem</p>\
-                        </div>\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p><span id="emotion">6%</span></p>\
-                          <p><span id="emotion">31%</span></p>\
-                        </div>\
-                      </div>\
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
+                      <p><span id="legendcriancas"></span> Criança <span id="emotion" style="margin-left:7px !important;">6%</span></p>\
+                      <p><span id="legendjovens"></span> Jovem <span id="emotion" style="margin-left:7px !important;">31%</span></p>\
                     </div>\
-                    <div class="col-md-6 col-xs-6 text-center">\
-                      <div class="row">\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p>Adulto </p>\
-                          <p>Idoso</p>\
-                        </div>\
-                        <div class="col-md-5 col-xs-6 text-center">\
-                          <p><span id="emotion">53%</span></p>\
-                          <p><span id="emotion">10%</span></p>\
-                        </div>\
-                      </div>\
+                    <div class="col-md-6 col-sm-6 col-xs-6">\
+                      <p><span id="legendadultos"></span> Adulto <span id="emotion" style="margin-left:7px !important;">53%</span></p>\
+                      <p><span id="legendidosos"></span> Idoso <span id="emotion" style="margin-left:7px !important;">10%</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionFive()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownFive" class="dropdown-content">\
-                      <a href="#">Comparar períodos</a>\
-                      <a href="#">Comparar demografia com outros dados</a>\
+                      <a href="pages/estatistica.html">Comparar períodos</a>\
+                      <a href="pages/estatistica.html">Comparar demografia com outros dados</a>\
                     </div>\
                   </div>';
         document.getElementById('datefive').innerHTML = b;
@@ -543,23 +553,24 @@
         var a = "img/chartgenerohorariohoje.png";
         var b = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
                   <div class="row">\
-                    <strong>Horários com maior concentração por Idade: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Hoje</strong> </strong></p>\
+                    <strong>Horários com maior concentração por Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Hoje</strong> </strong></p>\
                     <div class="col-md-6 col-sm-6 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhor"></span> Homens </span></p>\
-                      <p class="text-center">Das 20:00 às 20:59 <span id="emotion">50 homens</span></p>\
-                      <p class="text-center">Das 21:00 às 21:59 <span id="emotion">61 homens</span></p>\
+                      <p class="text-center">Das 20:00 às 20:59 <span id="emotion">50</span></p>\
+                      <p class="text-center">Das 21:00 às 21:59 <span id="emotion">61</span></p>\
                     </div>\
                     <div class="col-md-6 col-sm-6 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhortwo"></span> Mulheres </p>\
-                      <p class="text-center">Das 09:00 às 09:59 <span id="emotion">73 mulheres</span></p>\
-                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">60 mulheres</span></p>\
+                      <p class="text-center">Das 09:00 às 09:59 <span id="emotion">73</span></p>\
+                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">60</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionSix()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownSix" class="dropdown-content">\
-                      <a href="#third-container" onclick="changeGenChartHojeMulheres()">Apenas Mulheres</a>\
-                      <a href="#third-container" onclick="changeGenChartHojeHomens()">Apenas Homens</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartHojeMulheres()">Apenas Mulheres</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartHojeHomens()">Apenas Homens</a>\
+                      <a href="pages/estatistica.html">Período personalizado</a>\
                     </div>\
                   </div>';
 
@@ -574,15 +585,16 @@
                     <strong>Horários com maior concentração por Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Hoje</strong> </strong></p>\
                     <div class="col-md-12 col-sm-12 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhortwo"></span> Mulheres </p>\
-                      <p class="text-center">Das 09:00 às 09:59 <span id="emotion">73 mulheres</span></p>\
-                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">60 mulheres</span></p>\
+                      <p class="text-center">Das 09:00 às 09:59 <span id="emotion">73</span></p>\
+                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">60</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionSix()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownSix" class="dropdown-content">\
-                      <a href="#third-container" onclick="changeGenChartHojeHomens()">Apenas Homens</a>\
-                      <a href="#third-container" onclick="changeGenChartHoje()">Homens e Mulheres</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartHojeHomens()">Apenas Homens</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartHoje()">Homens e Mulheres</a>\
+                      <a href="pages/estatistica.html">Período personalizado</a>\
                     </div>\
                   </div>';
 
@@ -597,15 +609,16 @@
                     <strong>Horários com maior concentração por Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Hoje</strong> </strong></p>\
                     <div class="col-md-12 col-sm-12 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhor"></span> Homens</p>\
-                      <p class="text-center">Das 20:00 às 20:59 <span id="emotion">50 homens</span></p>\
-                      <p class="text-center">Das 21:00 às 21:59 <span id="emotion">61 homens</span></p>\
+                      <p class="text-center">Das 20:00 às 20:59 <span id="emotion">50</span></p>\
+                      <p class="text-center">Das 21:00 às 21:59 <span id="emotion">61</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionSix()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownSix" class="dropdown-content">\
-                      <a href="#third-container" onclick="changeGenChartHojeMulheres()">Apenas Mulheres</a>\
-                      <a href="#third-container" onclick="changeGenChartHoje()">Homens e Mulheres</a>\
+                      <a hstyle="cursor:pointer;" onclick="changeGenChartHojeMulheres()">Apenas Mulheres</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartHoje()">Homens e Mulheres</a>\
+                      <a href="pages/estatistica.html">Período personalizado</a>\
                     </div>\
                   </div>';
 
@@ -620,20 +633,21 @@
                     <strong>Horários com maior concentração por Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana Atual</strong> </strong></p>\
                     <div class="col-md-6 col-sm-6 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhor"></span> Homens </p>\
-                      <p class="text-center">Das 19:00 às 19:59 <span id="emotion">273 homens</span></p>\
-                      <p class="text-center">Das 20:00 às 20:59 <span id="emotion">244 homens</span></p>\
+                      <p class="text-center">Das 19:00 às 19:59 <span id="emotion">273</span></p>\
+                      <p class="text-center">Das 20:00 às 20:59 <span id="emotion">244</span></p>\
                     </div>\
                     <div class="col-md-6 col-sm-6 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhortwo"></span> Mulheres </p>\
-                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">378 mulheres</span></p>\
-                      <p class="text-center">Das 11:00 às 11:59 <span id="emotion">411 mulheres</span></p>\
+                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">378</span></p>\
+                      <p class="text-center">Das 11:00 às 11:59 <span id="emotion">411</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionSix()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownSix" class="dropdown-content">\
-                      <a href="#third-container" onclick="changeGenChartSemanaMulheres()">Apenas Mulheres</a>\
-                      <a href="#third-container" onclick="changeGenChartSemanaHomens()">Apenas Homens</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartSemanaMulheres()">Apenas Mulheres</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartSemanaHomens()">Apenas Homens</a>\
+                      <a href="pages/estatistica.html">Período personalizado</a>\
                     </div>\
                   </div>';
 
@@ -648,15 +662,16 @@
                     <strong>Horários com maior concentração por Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana Atual</strong> </strong></p>\
                     <div class="col-md-12 col-sm-12 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhortwo"></span> Mulheres </p>\
-                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">378 mulheres</span></p>\
-                      <p class="text-center">Das 11:00 às 11:59 <span id="emotion">411 mulheres</span></p>\
+                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">378</span></p>\
+                      <p class="text-center">Das 11:00 às 11:59 <span id="emotion">411</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionSix()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownSix" class="dropdown-content">\
-                      <a href="#third-container" onclick="changeGenChartSemanaHomens()">Apenas Homens</a>\
-                      <a href="#third-container" onclick="changeGenChartSemana()">Homens e Mulheres</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartSemanaHomens()">Apenas Homens</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartSemana()">Homens e Mulheres</a>\
+                      <a href="pages/estatistica.html">Período personalizado</a>\
                     </div>\
                   </div>';
 
@@ -672,15 +687,16 @@
                     <strong>Horários com maior concentração por Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana Atual</strong> </strong></p>\
                     <div class="col-md-12 col-sm-12 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhor"></span> Homens</p>\
-                      <p class="text-center">Das 19:00 às 19:59 <span id="emotion">273 homens</span></p>\
-                      <p class="text-center">Das 20:00 às 20:59 <span id="emotion">244 homens</span></p>\
+                      <p class="text-center">Das 19:00 às 19:59 <span id="emotion">273</span></p>\
+                      <p class="text-center">Das 20:00 às 20:59 <span id="emotion">244</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionSix()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownSix" class="dropdown-content">\
-                      <a href="#third-container" onclick="changeGenChartSemanaMulheres()">Apenas Mulheres</a>\
-                      <a href="#third-container" onclick="changeGenChartSemana()">Homens e Mulheres</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartSemanaMulheres()">Apenas Mulheres</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartSemana()">Homens e Mulheres</a>\
+                      <a href="pages/estatistica.html">Período personalizado</a>\
                     </div>\
                   </div>';
 
@@ -696,20 +712,21 @@
                     <strong>Horários com maior concentração por Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês Atual</strong> </strong></p>\
                     <div class="col-md-6 col-sm-6 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhor"></span> Homens </p>\
-                      <p class="text-center">Das 19:00 às 19:59 <span id="emotion">788 homens</span></p>\
-                      <p class="text-center">Das 20:00 às 20:59 <span id="emotion">536 homens</span></p>\
+                      <p class="text-center">Das 19:00 às 19:59 <span id="emotion">788</span></p>\
+                      <p class="text-center">Das 20:00 às 20:59 <span id="emotion">536</span></p>\
                     </div>\
                     <div class="col-md-6 col-sm-6 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhortwo"></span> Mulheres </p>\
-                      <p class="text-center">Das 09:00 às 09:59 <span id="emotion">1.031 mulheres</span></p>\
-                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">1.788 mulheres</span></p>\
+                      <p class="text-center">Das 09:00 às 09:59 <span id="emotion">1.031</span></p>\
+                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">1.788</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionSix()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownSix" class="dropdown-content">\
-                      <a href="#third-container" onclick="changeGenChartMesMulheres()">Apenas Mulheres</a>\
-                      <a href="#third-container" onclick="changeGenChartMesHomens()">Apenas Homens</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartMesMulheres()">Apenas Mulheres</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartMesHomens()">Apenas Homens</a>\
+                      <a href="pages/estatistica.html">Período personalizado</a>\
                     </div>\
                   </div>';
 
@@ -724,15 +741,16 @@
                     <strong>Horários com maior concentração por Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês Atual</strong> </strong></p>\
                     <div class="col-md-12 col-sm-12 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhortwo"></span> Mulheres </p>\
-                      <p class="text-center">Das 09:00 às 09:59 <span id="emotion">1.031 mulheres</span></p>\
-                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">1.788 mulheres</span></p>\
+                      <p class="text-center">Das 09:00 às 09:59 <span id="emotion">1.031</span></p>\
+                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">1.788</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionSix()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownSix" class="dropdown-content">\
-                      <a href="#third-container" onclick="changeGenChartMesHomens()">Apenas Homens</a>\
-                      <a href="#third-container" onclick="changeGenChartMes()">Homens e Mulheres</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartMesHomens()">Apenas Homens</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartMes()">Homens e Mulheres</a>\
+                      <a href="pages/estatistica.html">Período personalizado</a>\
                     </div>\
                   </div>';
 
@@ -747,15 +765,16 @@
                     <strong>Horários com maior concentração por Gênero: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês Atual</strong> </strong></p>\
                     <div class="col-md-12 col-sm-12 text-center">\
                       <p style="margin-top:-3px !important;"><span id="legendgenhor"></span> Homens </p>\
-                      <p class="text-center">Das 09:00 às 09:59 <span id="emotion">1.031 mulheres</span></p>\
-                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">1.788 mulheres</span></p>\
+                      <p class="text-center">Das 09:00 às 09:59 <span id="emotion">1.031</span></p>\
+                      <p class="text-center">Das 10:00 às 10:59 <span id="emotion">1.788</span></p>\
                     </div>\
                   </div>\
                   <div class="dropdown">\
                     <i onclick="myFunctionSix()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                     <div id="myDropdownSix" class="dropdown-content">\
-                      <a href="#third-container" onclick="changeGenChartMesMulheres()">Apenas Mulheres</a>\
-                      <a href="#third-container" onclick="changeGenChartMes()">Homens e Mulheres</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartMesMulheres()">Apenas Mulheres</a>\
+                      <a style="cursor:pointer;" onclick="changeGenChartMes()">Homens e Mulheres</a>\
+                      <a href="pages/estatistica.html">Período personalizado</a>\
                     </div>\
                   </div>';
 
@@ -772,33 +791,33 @@
                 <strong>Horários com maior concentração por Idade: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Hoje</strong> </strong></p>\
                 <div class="row">\
                   <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
-                    <p style="margin-top:-1px !important;"><span id="legendcriancas"></span> Crianças</p>\
+                    <p style="margin-top:-1px !important;"><span id="legendcriancas"></span> Criança</p>\
                     <p class="text-center">Das 09:00 às 09:59 <span id="emotion">17</span></p>\
                     <p class="text-center">Das 20:00 às 20:59 <span id="emotion">13</span></p>\
                   </div>\
                   <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
-                    <p style="margin-top:-1px !important;"><span id="legendjovens"></span> Jovens </p>\
-                    <p class="text-center">Das 09:00 às 09:59 <span id="emotion">1.031</span></p>\
-                    <p class="text-center">Das 10:00 às 10:59 <span id="emotion">1.788</span></p>\
+                    <p style="margin-top:-1px !important;"><span id="legendjovens"></span> Jovem </p>\
+                    <p class="text-center">Das 12:00 às 13:00 <span id="emotion">39</span></p>\
+                    <p class="text-center">Das 21:00 às 21:59 <span id="emotion">27</span></p>\
                   </div>\
                 </div>\
                 <div class="row">\
                   <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
-                    <p><span id="legendadultos"></span> Adultos </p>\
-                    <p class="text-center">Das 19:00 às 19:59 <span id="emotion">788</span></p>\
-                    <p class="text-center">Das 20:00 às 20:59 <span id="emotion">536</span></p>\
+                    <p><span id="legendadultos"></span> Adulto </p>\
+                    <p class="text-center">Das 12:00 às 13:00 <span id="emotion">41</span></p>\
+                    <p class="text-center">Das 21:00 às 21:59 <span id="emotion">29</span></p>\
                   </div>\
                   <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
-                    <p><span id="legendidosos"></span> Idosos</p>\
-                    <p class="text-center">Das 09:00 às 09:59 <span id="emotion">1.031</span></p>\
-                    <p class="text-center">Das 10:00 às 10:59 <span id="emotion">1.788</span></p>\
+                    <p><span id="legendidosos"></span> Idoso</p>\
+                    <p class="text-center">Das 10:00 às 10:59 <span id="emotion">15</span></p>\
+                    <p class="text-center">Das 19:00 às 17:59 <span id="emotion">13</span></p>\
                   </div>\
                 </div>\
                 <div class="dropdown">\
                   <i onclick="myFunctionSeven()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
                   <div id="myDropdownSeven" class="dropdown-content">\
-                    <a href="#third-container" onclick="changeGenChartMesMulheres()">X</a>\
-                    <a href="#third-container" onclick="changeGenChartMesHomens()">X</a>\
+                    <a href="pages/estatistica.html" onclick="changeGenChartMesMulheres()">Comparar idade e horário com outros dados</a>\
+                    <a href="pages/estatistica.html" onclick="changeGenChartMesHomens()">Período personalizado</a>\
                   </div>\
                 </div>';
 
@@ -809,6 +828,97 @@
         document.getElementById("dateseven").innerHTML = e;
       }
 
+      function changeAgeChartSemana() {
+        var a = "img/chartidadehorariocriancasemana.png";
+        var b = "img/chartidadehorarioadultosemana.png";
+        var c = "img/chartidadehorariojovemsemana.png";
+        var d = "img/chartidadehorarioidososemana.png";
+        var e = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
+                <strong>Horários com maior concentração por Idade: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Semana atual</strong> </strong></p>\
+                <div class="row">\
+                  <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
+                    <p style="margin-top:-1px !important;"><span id="legendcriancas"></span> Criança</p>\
+                    <p class="text-center">Das 18:00 às 18:59 <span id="emotion">74</span></p>\
+                    <p class="text-center">Das 12:00 às 12:59 <span id="emotion">67</span></p>\
+                  </div>\
+                  <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
+                    <p style="margin-top:-1px !important;"><span id="legendjovens"></span> Jovem </p>\
+                    <p class="text-center">Das 12:00 às 13:00 <span id="emotion">349</span></p>\
+                    <p class="text-center">Das 19:00 às 19:59 <span id="emotion">301</span></p>\
+                  </div>\
+                </div>\
+                <div class="row">\
+                  <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
+                    <p><span id="legendadultos"></span> Adulto </p>\
+                    <p class="text-center">Das 11:00 às 11:59 <span id="emotion">179</span></p>\
+                    <p class="text-center">Das 14:00 às 14:59 <span id="emotion">257</span></p>\
+                  </div>\
+                  <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
+                    <p><span id="legendidosos"></span> Idoso</p>\
+                    <p class="text-center">Das 09:00 às 09:59 <span id="emotion">68</span></p>\
+                    <p class="text-center">Das 20:00 às 20:59 <span id="emotion">153</span></p>\
+                  </div>\
+                </div>\
+                <div class="dropdown">\
+                  <i onclick="myFunctionSeven()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                  <div id="myDropdownSeven" class="dropdown-content">\
+                    <a href="pages/estatistica.html" onclick="changeGenChartMesMulheres()">Comparar idade e horário com outros dados</a>\
+                    <a href="pages/estatistica.html" onclick="changeGenChartMesHomens()">Período personalizado</a>\
+                  </div>\
+                </div>';
+
+        document.getElementById("mydemochartone").setAttribute("src", a);
+        document.getElementById("mydemocharttwo").setAttribute("src", b);
+        document.getElementById("mydemochartthree").setAttribute("src", c);
+        document.getElementById("mydemochartfour").setAttribute("src", d);
+        document.getElementById("dateseven").innerHTML = e;
+      }
+
+      function changeAgeChartMes() {
+        var a = "img/chartidadehorariocriancames.png";
+        var b = "img/chartidadehorarioadultomes.png";
+        var c = "img/chartidadehorariojovemmes.png";
+        var d = "img/chartidadehorarioidosomes.png";
+        var e = '<p id="estabelecimento" class="text-center" style="margin: 0 auto 15px 0 !important;">\
+                <strong>Horários com maior concentração por Idade: <strong style="border-bottom: 2px solid white; padding-bottom: 1px; font-size:18px;"> Mês atual</strong> </strong></p>\
+                <div class="row">\
+                  <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
+                    <p style="margin-top:-1px !important;"><span id="legendcriancas"></span> Criança</p>\
+                    <p class="text-center">Das 13:00 às 13:59 <span id="emotion">159</span></p>\
+                    <p class="text-center">Das 14:00 às 14:59 <span id="emotion">98</span></p>\
+                  </div>\
+                  <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
+                    <p style="margin-top:-1px !important;"><span id="legendjovens"></span> Jovem </p>\
+                    <p class="text-center">Das 20:00 às 20:59 <span id="emotion">739</span></p>\
+                    <p class="text-center">Das 21:00 às 21:59 <span id="emotion">622</span></p>\
+                  </div>\
+                </div>\
+                <div class="row">\
+                  <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
+                    <p><span id="legendadultos"></span> Adulto </p>\
+                    <p class="text-center">Das 10:00 às 10:59 <span id="emotion">1164</span></p>\
+                    <p class="text-center">Das 14:00 às 14:59 <span id="emotion">889</span></p>\
+                  </div>\
+                  <div class="col-md-6 col-sm-6 col-xs-6 text-center">\
+                    <p><span id="legendidosos"></span> Idoso</p>\
+                    <p class="text-center">Das 17:00 às 17:59 <span id="emotion">232</span></p>\
+                    <p class="text-center">Das 18:00 às 18:59 <span id="emotion">78</span></p>\
+                  </div>\
+                </div>\
+                <div class="dropdown">\
+                  <i onclick="myFunctionSeven()" class="dropbtn fa fa-cog" aria-hidden="true"></i>\
+                  <div id="myDropdownSeven" class="dropdown-content">\
+                    <a href="pages/estatistica.html" onclick="changeGenChartMesMulheres()">Comparar idade e horário com outros dados</a>\
+                    <a href="pages/estatistica.html" onclick="changeGenChartMesHomens()">Período personalizado</a>\
+                  </div>\
+                </div>';
+
+        document.getElementById("mydemochartone").setAttribute("src", a);
+        document.getElementById("mydemocharttwo").setAttribute("src", b);
+        document.getElementById("mydemochartthree").setAttribute("src", c);
+        document.getElementById("mydemochartfour").setAttribute("src", d);
+        document.getElementById("dateseven").innerHTML = e;
+      }
 
 
       /* When the user clicks on the button, 

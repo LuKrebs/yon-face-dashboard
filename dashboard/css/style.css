@@ -218,9 +218,49 @@ html, body {
 	margin-bottom: -3px;
 }
 
-#lastcontainer .container-fluid .row p span#legendcriancas {
+#middlecontainer .container-fluid .row p span#legendcriancas {
+	padding: 8px 12px;
+	background-color: rgba(135, 194, 63,1);
+	border-radius: 0;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
+#middlecontainer .container-fluid .row p span#legendjovens {
+	padding: 8px 12px;
+	background-color: rgba(241, 196, 15,1);
+	border-radius: 0;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
+#middlecontainer .container-fluid .row p span#legendadultos {
+	padding: 8px 12px;
+	background-color: rgba(189, 195, 199,1);
+	border-radius: 0;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
+#middlecontainer .container-fluid .row p span#legendidosos {
 	padding: 8px 12px;
 	background-color: rgba(155, 89, 182,1);
+	border-radius: 0;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
+#lastcontainer .container-fluid .row p span#legendcriancas {
+	padding: 8px 12px;
+	background-color: rgba(135, 194, 63,1);
 	border-radius: 0;
 	display: inline-block;
 	margin-left: 8px;
@@ -250,7 +290,7 @@ html, body {
 
 #lastcontainer .container-fluid .row p span#legendidosos {
 	padding: 8px 12px;
-	background-color: rgba(203, 184, 214, 1);
+	background-color: rgba(155, 89, 182,1);
 	border-radius: 0;
 	display: inline-block;
 	margin-left: 8px;
@@ -426,6 +466,16 @@ html, body {
 	border: 2px solid transparent;
 }
 
+.data-two .container-fluid .row .col-md-6 span#pessoas {
+	background-color: white;
+	color: rgba(41,26,76,1);
+	border: 2px solid rgba(41,26,76,1);
+	transition: 0.5s;
+	padding: 2px 8px;
+	border-radius: 5px;
+	border: 2px solid transparent;	
+}
+
 .data-two .container-fluid .row .col-md-6 span#natraidos {
 	padding: 0 7px;
 	border-radius: 5px;
@@ -590,6 +640,9 @@ html, body {
 	}	
 	.header .container-fluid .pull-right .dropbtn-header {
 		margin-top: 3px;
+	}
+	.footer p {
+		font-size: 12px;
 	}
 }
 
