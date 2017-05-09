@@ -72,8 +72,59 @@ html, body {
 	transition: 0.5s;
 }
 
-/* data */
+/* minimize icon*/
 
+.data .container-fluid .row .col-md-4 a i {
+	color: white;
+	float: left;
+	margin-top: 3px;
+	padding: 3px;
+}
+
+.data .container-fluid .row .col-md-4 a i:hover {
+	color: white;
+	float: left;
+	margin-top: 3px;
+	background-color: white;
+	color: rgb(41,26,76);
+	transition: 0.3s;
+	border-radius: 5px;
+} 
+#middlecontainer .container-fluid .row .col-md-6 .mov a i#testicon {
+	color: white;
+	float: left;
+	margin-top: 3px;
+	padding: 3px;
+}
+
+#middlecontainer .container-fluid .row .col-md-6 .mov a i#testicon:hover {
+	color: white;
+	float: left;
+	margin-top: 3px;
+	background-color: white;
+	color: rgb(41,26,76);
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+#lastcontainer .container-fluid .row .col-md-6 .mov a i {
+	color: white;
+	float: left;
+	margin-top: 3px;
+	padding: 3px;	
+}
+
+#lastcontainer .container-fluid .row .col-md-6 .mov a i:hover {
+	color: white;
+	float: left;
+	margin-top: 3px;
+	background-color: white;
+	color: rgb(41,26,76);
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+/* data */
 
 .data .container-fluid .row .col-md-4 img {
 	margin: 0 auto;
